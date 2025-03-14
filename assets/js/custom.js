@@ -49,13 +49,22 @@ function hotelsPstatusAction(selector) {
     selectBoxBody.style.display = "none";
   }
 }
-function modalAction(elemnt) {
-  const moalMain = document.querySelector(elemnt);
-  if (moalMain.classList.contains("active")) {
-    moalMain.classList.remove("active");
+function modalAction(modalClass) {
+  const modal = document.querySelector(modalClass);
+  if (modal.classList.contains("active")) {
+    modal.classList.remove("active");
   } else {
-    moalMain.classList.add("active");
+    modal.classList.add("active");
   }
+}
+function switchModal(fromModal, toModal) {
+  // Close current modal
+  modalAction(`.${fromModal}-modal`);
+
+  // Open target modal after a short delay
+  setTimeout(() => {
+    modalAction(`.${toModal}-modal`);
+  }, 100);
 }
 const purchase_btns = document.querySelectorAll(".purchase-btn");
 const invoice_wrappers = document.querySelectorAll(".invoice-option");

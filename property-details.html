@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" class="favicon" href="assets/img/logo/logo-1.png" />
+
+    <title>Property Details - hotelipad</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-5.3.2.min.css" />
+
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+
+    <link rel="stylesheet" href="css/lity.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header class="header header-three">
+        <div class="header-section d-none d-lg-block">
+
+            <div class="header-nav">
+                <div class="container">
+                    <div class="header-nav-section">
+                        <div class="header-navigation">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo-1.png" alt="logo" />
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="header-btn">
+                            <a href="#" class="list-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C7.03 2 3 6.03 3 11V17C3 18.1 3.9 19 5 19H6C6 20.1 6.9 21 8 21H10C11.1 21 12 20.1 12 19H8V18H12C12 19.1 12.9 20 14 20H16C17.1 20 18 19.1 18 18H19C20.1 18 21 17.1 21 16V11C21 6.03 16.97 2 12 2ZM5 17V11C5 7.13 8.13 4 12 4C15.87 4 19 7.13 19 11V17H18V11C18 8.24 15.76 6 13 6C10.24 6 8 8.24 8 11V17H5Z"
+                                        fill="#1A8D03" />
+                                </svg>
+                                </span>
+                                <span class="list-text">Support</span>
+                            </a>
+                            <a href="#" class="list-item" onclick="modalAction('.ticket')">
+                                <span class="list-icon">
+                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="8.77799" cy="17.1112" rx="7.77799" ry="3.88899" stroke="#1A8D03"
+                                            stroke-width="1.4" stroke-linejoin="round" />
+                                        <circle cx="8.77718" cy="5.44456" r="4.44456" stroke="#1A8D03"
+                                            stroke-width="1.4" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="list-text">Login</span>
+                            </a>
+                            <a href="properties.html" class="primary-btn" style="background-color: #1A8D03;">
+                                <span>
+                                    <i class="fa fa-plus"></i>
+                                </span>
+                                <span> List Your Property</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mobile-menu mobile-menu-three d-block d-lg-none">
+            <div class="mobile-header">
+                <div class="header-logo">
+                    <img src="assets/img/logo/logo-1.png" alt="img" />
+                </div>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                    aria-controls="offcanvasWithBothOptions">
+                    <span>
+                        <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 0.875C0.5 0.391751 0.891751 0 1.375 0H20.625C21.1082 0 21.5 0.391751 21.5 0.875C21.5 1.35825 21.1082 1.75 20.625 1.75H1.375C0.891751 1.75 0.5 1.35825 0.5 0.875ZM0.5 7C0.5 6.51675 0.891751 6.125 1.375 6.125H20.625C21.1082 6.125 21.5 6.51675 21.5 7C21.5 7.48325 21.1082 7.875 20.625 7.875H1.375C0.891751 7.875 0.5 7.48325 0.5 7ZM10.125 13.125C10.125 12.6418 10.5168 12.25 11 12.25H20.625C21.1082 12.25 21.5 12.6418 21.5 13.125C21.5 13.6082 21.1082 14 20.625 14H11C10.5168 14 10.125 13.6082 10.125 13.125Z"
+                                fill="#1C1C1C" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+                <div class="offcanvas-header">
+                    <a href="#" class="mobile-logo">
+                        <img src="assets/img/logo/logo-1.png" alt="logo" />
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="mobile-menu-section">
+                        <h4 class="title">Menu</h4>
+                        <ul class="header-menu header-list">
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Home</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-list">
+                                <a href="about-us.html" class="list-item">
+                                    <span class="list-text">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Hotel</span>
+                                </a>
+                                <ul class="d-menu">
+                                    <li>
+                                        <a href="hotel-ameneties.html" class="list-item">
+                                            <span class="list-text">Hotel-Ameneties</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="hotel-details.html" class="list-item">
+                                            <span class="list-text">Hotel-List</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="agent-profile.html" class="list-item">
+                                            <span class="list-text">Agent-Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="hotel-error.html" class="list-item">
+                                            <span class="list-text">Hotel-Error</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Blog</span>
+                                </a>
+                                <ul class="d-menu">
+                                    <li>
+                                        <a href="blog-details.html" class="list-item">
+                                            <span class="list-text">Blog-Details</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-errors.html" class="list-item">
+                                            <span class="list-text">Blog-Error</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-grid.html" class="list-item">
+                                            <span class="list-text">Blog-Grid</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar.html" class="list-item">
+                                            <span class="list-text">Blog-Sidebar</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Pages</span>
+                                </a>
+                                <ul class="d-menu">
+                                    <li>
+                                        <a href="pricing.html" class="list-item">
+                                            <span class="list-text">Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="payment-mathod.html" class="list-item">
+                                            <span class="list-text">Payment-Method</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html" class="list-item">
+                                            <span class="list-text">Privacy-Policy</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-condition.html" class="list-item">
+                                            <span class="list-text">Terms & Condition</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="maintenance.html" class="list-item">
+                                            <span class="list-text">Maintenance</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list">
+                                <a href="faq.html" class="list-item">
+                                    <span class="list-text">FAQ</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="contact-us.html" class="list-item">
+                                    <span class="list-text">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal-wrapper ticket modal-wrapper-three">
+        <div onclick="modalAction('.ticket')" class="anywhere-away"></div>
+
+        <div class="login-section account-section modal-main">
+            <div class="contact-form">
+                <div class="section-head">
+                    <div class="section-title">
+                        <h3 class="title">Log in</h3>
+                        <p class="section-detail">Welcome to Hotelsun</p>
+                    </div>
+                    <span class="close-btn" onclick="modalAction('.ticket')">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#1A8D03" />
+                            <path d="M22.2188 9.77734L8.88614 23.1107" stroke="white" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M22.2188 23.1099L8.88614 9.77654" stroke="white" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-section">
+                    <div class="form-input">
+                        <div class="form-item">
+                            <label for="name">Name*</label>
+                            <input type="text" class="name form-control" id="name" placeholder="Name Here" />
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password*</label>
+                            <input type="password" class="password form-control" id="password" placeholder="******" />
+                        </div>
+                    </div>
+                    <div class="form-input forget-pass">
+                        <div class="form-item remember">
+                            <input type="checkbox" class="input-check" id="remember" />
+                            <label for="remember">Remeber Me</label>
+                        </div>
+                        <div class="form-item">
+                            <a href="#" class="forget text-end">Forget Password</a>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <a href="dashboard.html" class="primary-btn primary-btn-three">
+                            <span>Login</span>
+                            <span>
+                                <svg width="7" height="15" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.25 10.5L5.04289 6.70711C5.37623 6.37377 5.54289 6.20711 5.54289 6C5.54289 5.79289 5.37623 5.62623 5.04289 5.29289L1.25 1.5"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <h4 class="option">OR</h4>
+                    <div class="wrapper-social">
+                        <div class="social-item">
+                            <a href="#" class="icon-box">
+                                <span class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 12H22" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M20 14L20 10" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M8.5 12H15C15 15.5899 12.0899 18.5 8.5 18.5C4.91015 18.5 2 15.5899 2 12C2 8.41015 4.91015 5.5 8.5 5.5C10.2949 5.5 11.9199 6.22754 13.0962 7.40381"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="icon-box">
+                                <span class="social-icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <circle cx="17" cy="5" r="1" fill="currentColor" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <circle cx="11" cy="11" r="5" stroke="currentColor" stroke-width="1.5" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="icon-box">
+                                <span class="social-icon">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 16C19.8979 16 19.1559 16 18.6353 16.5886C18.0274 17.2761 17.3562 18 16.4384 18H15.6667C15.2339 18 14.8129 18.1404 14.4667 18.4L13.4 19.2C11.9778 20.2667 10.0222 20.2667 8.60001 19.2L7.53333 18.4C7.18714 18.1404 6.76608 18 6.33334 18L5.56154 18C4.64381 18 3.97263 17.2761 3.36467 16.5886C2.84415 16 2.10208 16 1 16L3.39999 14.2C4.40722 13.4446 5 12.259 5 11V10.5L4.49999 10.5C3.67157 10.5 3 9.82843 3 9C3 8.17158 3.67158 7.5 4.50001 7.5H5V7.00001C5 3.6863 7.6863 1 11 1.00001C14.3137 1.00001 17 3.6863 17 7.00001V7.5H17.5C18.3284 7.5 19 8.17158 19 9C19 9.82843 18.3284 10.5 17.5 10.5L17 10.5V11C17 12.259 17.5928 13.4446 18.6 14.2L21 16Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <span class="account">Dont’t have an aceount ? <a href="#">Create Account</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="c-hero" style="
+        background: url(assets/img/background/section-hero-bg.webp) no-repeat
+          center / cover;
+      " hidden>
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-content center-item">
+                    <h2 class="heading">Property Listing</h2>
+                    <ul class="section-list">
+                        <li class="nav-list">
+                            <a href="index.html" class="list-item">
+                                <span class="list-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#" class="list-item"><span>/</span></a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#" class="list-item">
+                                <span class="list-text">Property Listing</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hotel-details section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wrapper">
+                                <div class="wrapper-swiper">
+                                    <div class="swiper hotel-swiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/wrapper-img/h-img-1.webp" alt="img" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/wrapper-img/lancaster_kumasi_city.jpg" alt="img" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/wrapper-img/h-img-3.webp" alt="img" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/wrapper-img/h-img-4.webp" alt="img" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/wrapper-img/h-img-5.webp" alt="img" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper hotel-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="swiper-img">
+                                                    <img src="assets/img/wrapper-img/h-img-1.webp" alt="img" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="swiper-img">
+                                                    <img src="assets/img/wrapper-img/lancaster_kumasi_city.jpg"
+                                                        alt="img" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="swiper-img">
+                                                    <img src="assets/img/wrapper-img/h-img-3.webp" alt="img" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="swiper-img">
+                                                    <img src="assets/img/wrapper-img/h-img-4.webp" alt="img" />
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="swiper-img">
+                                                    <img src="assets/img/wrapper-img/h-img-5.webp" alt="img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-next">
+                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.66699 11.333L14.667 6.33301M14.667 6.33301L9.66699 1.33301M14.667 6.33301L1.33366 6.33301"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="wrapper-item">
+                                    <div class="wrapper-content">
+                                        <h3 class="wrapper-detail">Luxury hotel bedroom with sunlight from the window
+                                        </h3>
+                                        <div class="wrapper-review">
+                                            <div class="wrapper-list">
+                                                <div class="list-item">
+                                                    <span>
+                                                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15 8.11111C15 12.0385 10.625 17 8 17C5.375 17 1 12.0385 1 8.11111C1 4.18375 4.13401 1 8 1C11.866 1 15 4.18375 15 8.11111Z"
+                                                                stroke="currentColor"></path>
+                                                            <path
+                                                                d="M10.3333 8.2C10.3333 9.52548 9.28866 10.6 8 10.6C6.71134 10.6 5.66667 9.52548 5.66667 8.2C5.66667 6.87452 6.71134 5.8 8 5.8C9.28866 5.8 10.3333 6.87452 10.3333 8.2Z"
+                                                                stroke="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <p class="list-text">Kumasi</p>
+                                                </div>
+                                                <div class="list-item">
+                                                    <span>
+                                                        <svg width="96" height="16" viewBox="0 0 96 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M83.7759 10.2321L82.9144 15.5234C82.8911 15.6783 82.9493 15.8291 83.0696 15.9229C83.1899 16.0126 83.3491 16.0248 83.4771 15.9555L87.9981 13.4525L92.519 15.9514C92.5772 15.984 92.6393 15.9963 92.7014 15.9963C92.7829 15.9963 92.8605 15.9718 92.9304 15.9188C93.0507 15.8291 93.1089 15.6742 93.0856 15.5193L92.2241 10.228L95.8835 6.48167C95.9883 6.3716 96.0271 6.21262 95.9805 6.06179C95.934 5.91503 95.8137 5.80497 95.6662 5.78458L90.6097 5.01412L88.3473 0.207903C88.2154 -0.0693009 87.7807 -0.0693009 87.6527 0.207903L85.3903 5.0182L80.3338 5.79274C80.1863 5.81312 80.066 5.92319 80.0195 6.06994C79.9729 6.21669 80.0117 6.37976 80.1165 6.48982L83.7759 10.2321ZM85.7007 5.79681C85.8288 5.77643 85.9374 5.6949 85.9918 5.5726L87.9981 1.30856L90.0005 5.5726C90.0587 5.6949 90.1673 5.77643 90.2915 5.79681L94.7698 6.48167L91.5294 9.79996C91.4363 9.89372 91.3975 10.0282 91.4169 10.1628L92.1814 14.8508L88.1766 12.6372C88.1184 12.6046 88.0563 12.5924 87.9942 12.5924C87.9321 12.5924 87.87 12.6087 87.8118 12.6372L83.8108 14.8467L84.5753 10.1587C84.5986 10.0282 84.5559 9.88964 84.4628 9.79588L81.2225 6.47759L85.7007 5.79681Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M63.7759 10.2321L62.9144 15.5234C62.8911 15.6783 62.9493 15.8291 63.0696 15.9229C63.1899 16.0126 63.3491 16.0248 63.4771 15.9555L67.9981 13.4525L72.519 15.9514C72.5772 15.984 72.6393 15.9963 72.7014 15.9963C72.7829 15.9963 72.8605 15.9718 72.9304 15.9188C73.0507 15.8291 73.1089 15.6742 73.0856 15.5193L72.2241 10.228L75.8835 6.48167C75.9883 6.3716 76.0271 6.21262 75.9805 6.06179C75.934 5.91503 75.8137 5.80497 75.6662 5.78458L70.6097 5.01412L68.3473 0.207903C68.2154 -0.0693009 67.7807 -0.0693009 67.6527 0.207903L65.3903 5.0182L60.3338 5.79274C60.1863 5.81312 60.066 5.92319 60.0195 6.06994C59.9729 6.21669 60.0117 6.37976 60.1165 6.48982L63.7759 10.2321ZM65.7007 5.79681C65.8288 5.77643 65.9374 5.6949 65.9918 5.5726L67.9981 1.30856L70.0005 5.5726C70.0587 5.6949 70.1673 5.77643 70.2915 5.79681L74.7698 6.48167L71.5294 9.79996C71.4363 9.89372 71.3975 10.0282 71.4169 10.1628L72.1814 14.8508L68.1766 12.6372C68.1184 12.6046 68.0563 12.5924 67.9942 12.5924C67.9321 12.5924 67.87 12.6087 67.8118 12.6372L63.8108 14.8467L64.5753 10.1587C64.5986 10.0282 64.5559 9.88964 64.4628 9.79588L61.2225 6.47759L65.7007 5.79681Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M67.5 1.5L66.5 3.5L65.5 5.5L60.5 6.5L64.5 10.5L63.5 15.5L68 13L72.5 15.5V14L72 11.5L71.5 10H72L72.5 9.5L73.5 8.5L74 7.5L75 7L75.5 6H75H73L71.5 5.5H70.5L70 5L69.5 3.5L68.5 2L68 0.5L67.5 1.5Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M43.7759 10.2321L42.9144 15.5234C42.8911 15.6783 42.9493 15.8291 43.0696 15.9229C43.1899 16.0126 43.3491 16.0248 43.4771 15.9555L47.9981 13.4525L52.519 15.9514C52.5772 15.984 52.6393 15.9963 52.7014 15.9963C52.7829 15.9963 52.8605 15.9718 52.9304 15.9188C53.0507 15.8291 53.1089 15.6742 53.0856 15.5193L52.2241 10.228L55.8835 6.48167C55.9883 6.3716 56.0271 6.21262 55.9805 6.06179C55.934 5.91503 55.8137 5.80497 55.6662 5.78458L50.6097 5.01412L48.3473 0.207903C48.2154 -0.0693009 47.7807 -0.0693009 47.6527 0.207903L45.3903 5.0182L40.3338 5.79274C40.1863 5.81312 40.066 5.92319 40.0195 6.06994C39.9729 6.21669 40.0117 6.37976 40.1165 6.48982L43.7759 10.2321ZM45.7007 5.79681C45.8288 5.77643 45.9374 5.6949 45.9918 5.5726L47.9981 1.30856L50.0005 5.5726C50.0587 5.6949 50.1673 5.77643 50.2915 5.79681L54.7698 6.48167L51.5294 9.79996C51.4363 9.89372 51.3975 10.0282 51.4169 10.1628L52.1814 14.8508L48.1766 12.6372C48.1184 12.6046 48.0563 12.5924 47.9942 12.5924C47.9321 12.5924 47.87 12.6087 47.8118 12.6372L43.8108 14.8467L44.5753 10.1587C44.5986 10.0282 44.5559 9.88964 44.4628 9.79588L41.2225 6.47759L45.7007 5.79681Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M47.5 1.5L46.5 3.5L45.5 5.5L40.5 6.5L44.5 10.5L43.5 15.5L48 13L52.5 15.5V14L52 11.5L51.5 10H52L52.5 9.5L53.5 8.5L54 7.5L55 7L55.5 6H55H53L51.5 5.5H50.5L50 5L49.5 3.5L48.5 2L48 0.5L47.5 1.5Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M23.7759 10.2321L22.9144 15.5234C22.8911 15.6783 22.9493 15.8291 23.0696 15.9229C23.1899 16.0126 23.3491 16.0248 23.4771 15.9555L27.9981 13.4525L32.519 15.9514C32.5772 15.984 32.6393 15.9963 32.7014 15.9963C32.7829 15.9963 32.8605 15.9718 32.9304 15.9188C33.0507 15.8291 33.1089 15.6742 33.0856 15.5193L32.2241 10.228L35.8835 6.48167C35.9883 6.3716 36.0271 6.21262 35.9805 6.06179C35.934 5.91503 35.8137 5.80497 35.6662 5.78458L30.6097 5.01412L28.3473 0.207903C28.2154 -0.0693009 27.7807 -0.0693009 27.6527 0.207903L25.3903 5.0182L20.3338 5.79274C20.1863 5.81312 20.066 5.92319 20.0195 6.06994C19.9729 6.21669 20.0117 6.37976 20.1165 6.48982L23.7759 10.2321ZM25.7007 5.79681C25.8288 5.77643 25.9374 5.6949 25.9918 5.5726L27.9981 1.30856L30.0005 5.5726C30.0587 5.6949 30.1673 5.77643 30.2915 5.79681L34.7698 6.48167L31.5294 9.79996C31.4363 9.89372 31.3975 10.0282 31.4169 10.1628L32.1814 14.8508L28.1766 12.6372C28.1184 12.6046 28.0563 12.5924 27.9942 12.5924C27.9321 12.5924 27.87 12.6087 27.8118 12.6372L23.8108 14.8467L24.5753 10.1587C24.5986 10.0282 24.5559 9.88964 24.4628 9.79588L21.2225 6.47759L25.7007 5.79681Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M27.5 1.5L26.5 3.5L25.5 5.5L20.5 6.5L24.5 10.5L23.5 15.5L28 13L32.5 15.5V14L32 11.5L31.5 10H32L32.5 9.5L33.5 8.5L34 7.5L35 7L35.5 6H35H33L31.5 5.5H30.5L30 5L29.5 3.5L28.5 2L28 0.5L27.5 1.5Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M3.77592 10.2321L2.91442 15.5234C2.89114 15.6783 2.94935 15.8291 3.06965 15.9229C3.18995 16.0126 3.34905 16.0248 3.47711 15.9555L7.99806 13.4525L12.519 15.9514C12.5772 15.984 12.6393 15.9963 12.7014 15.9963C12.7829 15.9963 12.8605 15.9718 12.9304 15.9188C13.0507 15.8291 13.1089 15.6742 13.0856 15.5193L12.2241 10.228L15.8835 6.48167C15.9883 6.3716 16.0271 6.21262 15.9805 6.06179C15.934 5.91503 15.8137 5.80497 15.6662 5.78458L10.6097 5.01412L8.34732 0.207903C8.21537 -0.0693009 7.78074 -0.0693009 7.65268 0.207903L5.39027 5.0182L0.333795 5.79274C0.186331 5.81312 0.0660312 5.92319 0.0194635 6.06994C-0.0271041 6.21669 0.0117023 6.37976 0.11648 6.48982L3.77592 10.2321ZM5.70072 5.79681C5.82878 5.77643 5.93744 5.6949 5.99177 5.5726L7.99806 1.30856L10.0005 5.5726C10.0587 5.6949 10.1673 5.77643 10.2915 5.79681L14.7698 6.48167L11.5294 9.79996C11.4363 9.89372 11.3975 10.0282 11.4169 10.1628L12.1814 14.8508L8.17657 12.6372C8.11836 12.6046 8.05627 12.5924 7.99418 12.5924C7.93209 12.5924 7.87 12.6087 7.81179 12.6372L3.81085 14.8467L4.57534 10.1587C4.59862 10.0282 4.55593 9.88964 4.4628 9.79588L1.22246 6.47759L5.70072 5.79681Z"
+                                                                fill="#FBB03B"></path>
+                                                            <path
+                                                                d="M7.5 1.5L6.5 3.5L5.5 5.5L0.5 6.5L4.5 10.5L3.5 15.5L8 13L12.5 15.5V14L12 11.5L11.5 10H12L12.5 9.5L13.5 8.5L14 7.5L15 7L15.5 6H15H13L11.5 5.5H10.5L10 5L9.5 3.5L8.5 2L8 0.5L7.5 1.5Z"
+                                                                fill="#FBB03B"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <p class="list-text">1.5k</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="wrapper-price">
+                                        <span class="price">GHS 5,106.00</span>
+                                        <span class="price-text">Start from</span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <span class="accordion-text">Description</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-detail">
+                                                How the adventure ended will be seen anon. Aouda was anxious, though she
+                                                said nothing. As for Passepartout, he our a thought Fogg’s manoeuvre
+                                                simply
+                                                glorious. The captain had said “between eleven and twelve knots,” and
+                                                our a the Henrietta confirmed a prediction.If, thenfor there were “ifs”
+                                                still—the sea did not become too boisterous, if the wind did not veer a
+                                                round to the as no accident happened to the boat or its machinery.
+                                            </p>
+                                            <p class="accordion-detail">
+                                                The Henrietta might cross the three thousand miles from New York to
+                                                Liverpool in the nine days, ki hoyse between the 12th and the st of
+                                                December. It
+                                                is true that, once arrived, the affair on board the Henrietta.
+                                            </p>
+                                            <a href="#" class="accordion-btn">
+                                                <span> Show More </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <span class="accordion-text">Room Info</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample2">
+                                        <div class="accordion-body">
+                                            <ul class="accordion-list section-list">
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Bed Rooms</p>
+                                                    </div>
+                                                    <p class="list-quantity">3</p>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Adult Gest</p>
+                                                    </div>
+                                                    <p class="list-quantity">4</p>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Kitchen</p>
+                                                    </div>
+                                                    <p class="list-quantity">1</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="accordion-list section-list">
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Bath Rooms</p>
+                                                    </div>
+                                                    <p class="list-quantity">3</p>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Children Gest</p>
+                                                    </div>
+                                                    <p class="list-quantity">2</p>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Room Balcony</p>
+                                                    </div>
+                                                    <p class="list-quantity">2</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <span class="accordion-text">Room Amenities</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample3">
+                                        <div class="accordion-body">
+                                            <ul class="room-list section-list">
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Free Wifi</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Swimming Pool</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Air Conditioning</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Internet Connection</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Kitchen</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Car Parking Lot</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Gaming Corner</p>
+                                                    </div>
+                                                </li>
+                                                <li class="list-item">
+                                                    <div class="list-detail">
+                                                        <span class="list-icon">
+                                                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3.82919 7.84588C3.73373 7.94481 3.6035 8 3.46821 8C3.33293 8 3.20269 7.94481 3.10724 7.84588L0.224383 4.87525C-0.0747943 4.56701 -0.0747943 4.06719 0.224383 3.75953L0.585359 3.38752C0.88463 3.07929 1.3692 3.07929 1.66838 3.38752L3.46821 5.24195L8.33162 0.231178C8.63089 -0.0770592 9.11593 -0.0770592 9.41464 0.231178L9.77562 0.603181C10.0748 0.911418 10.0748 1.41115 9.77562 1.7189L3.82919 7.84588Z"
+                                                                    fill="#2B74FE" />
+                                                            </svg>
+                                                        </span>
+                                                        <p class="list-text">Fitness & Spa Center</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            <span class="accordion-text">Hotel Contact Information</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample4">
+                                        <div class="accordion-body">
+                                            <table class="table-main">
+                                                <tbody>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Hotel Type:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">5 Star</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Check In:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">8:00 AM - 11:00 AM</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Check Out:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">12:00 PM - 1:00 PM</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Block:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">9</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Floor:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">6</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Phone Number:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">(233) 456-78541</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hotel-row">
+                                                        <td class="hotel-data hotel-info">
+                                                            <p class="hotel-text">Address:</p>
+                                                        </td>
+                                                        <td class="hotel-data">
+                                                            <p class="hotel-text">374 A Ahodwo Nhyieso Harper
+                                                                Road-Kumasi</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                            aria-expanded="false" aria-controls="flush-collapseSix">
+                                            <span class="accordion-text">Location</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample5">
+                                        <div class="accordion-body">
+                                            <div class="accordion-location">
+                                                <div class="location-content">
+                                                    <div class="icon">
+                                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M2.55 20.25C2.13579 20.25 1.8 20.5858 1.8 21C1.8 21.4142 2.13579 21.75 2.55 21.75V20.25ZM14.95 21.75C15.3642 21.75 15.7 21.4142 15.7 21C15.7 20.5858 15.3642 20.25 14.95 20.25V21.75ZM15.75 8.5C15.75 10.1981 14.6274 12.4022 13.0703 14.2376C12.3055 15.139 11.4701 15.9098 10.6819 16.4488C9.87165 17.0029 9.2019 17.25 8.75 17.25V18.75C9.65435 18.75 10.6315 18.3005 11.5286 17.687C12.4479 17.0584 13.3804 16.1906 14.2141 15.208C15.8538 13.2752 17.25 10.7292 17.25 8.5H15.75ZM8.75 17.25C8.31285 17.25 7.64989 16.992 6.83557 16.4004C6.0463 15.8269 5.20886 15.0085 4.44153 14.0574C2.8796 12.1213 1.75 9.81691 1.75 8.11111H0.25C0.25 10.3327 1.63915 12.9727 3.27409 14.9992C4.1052 16.0294 5.03573 16.9468 5.95389 17.6139C6.84698 18.2628 7.8309 18.75 8.75 18.75V17.25ZM1.75 8.11111C1.75 4.5023 5.07541 1.75 8.75 1.75V0.25C4.43487 0.25 0.25 3.4977 0.25 8.11111H1.75ZM8.75 1.75C12.3966 1.75 15.75 4.47727 15.75 8.5H17.25C17.25 3.52273 13.0931 0.25 8.75 0.25V1.75ZM11.1 8C11.1 9.21965 10.0712 10.25 8.75 10.25V11.75C10.8529 11.75 12.6 10.0941 12.6 8H11.1ZM8.75 10.25C7.42876 10.25 6.4 9.21965 6.4 8H4.9C4.9 10.0941 6.64707 11.75 8.75 11.75V10.25ZM6.4 8C6.4 6.78035 7.42876 5.75 8.75 5.75V4.25C6.64707 4.25 4.9 5.90594 4.9 8H6.4ZM8.75 5.75C10.0712 5.75 11.1 6.78035 11.1 8H12.6C12.6 5.90594 10.8529 4.25 8.75 4.25V5.75ZM2.55 21.75H14.95V20.25H2.55V21.75Z"
+                                                                fill="#405FF2" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="text">Ahodwo Nhyieso Harper Road-Kumasi,Ghana
+                                                    </p>
+                                                </div>
+                                                <iframe
+                                                    src="https://maps.google.com/maps?width=664&amp;height=385&amp;hl=en&amp;q=lancaster hotel kumasi&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                                    width="524" height="206" allowfullscreen loading="lazy"
+                                                    referrerpolicy="no-referrer-when-downgrade">
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample7">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                            aria-expanded="false" aria-controls="flush-collapseSeven">
+                                            <span class="accordion-text">Reviews</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample7">
+                                        <div class="accordion-body review-body">
+                                            <div class="accordion-review">
+                                                <ul class="review-box-item">
+                                                    <li class="review-wrapper">
+                                                        <div class="wrapper-img">
+                                                            <img src="assets/img/section-img/uncle.jpg" width="80"
+                                                                height="80" alt="img"
+                                                                style="border: 2px solid #a7a1a1;border-radius: 50%;" />
+                                                        </div>
+                                                        <div class="wrapper-content">
+                                                            <h5 class="wrapper-aurthor">Daniel Turkson Takyi</h5>
+                                                            <p class="wrapper-date">2025-03-23, 11:51 am</p>
+                                                            <div class="wrapper-review">
+                                                                <span>
+                                                                    <svg width="101" height="14" viewBox="0 0 101 14"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M7.02178 0C6.72254 0 6.42329 0.16135 6.26842 0.486785L4.55432 4.10759L0.719252 4.68736C0.031512 4.79128 -0.244109 5.6746 0.254634 6.18053L3.02922 8.99733L2.37298 12.9764C2.25485 13.6902 2.97672 14.2344 3.59096 13.898L7.02178 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M6.97822 0C7.27746 0 7.57671 0.16135 7.73158 0.486785L9.44568 4.10759L13.2807 4.68736C13.9685 4.79128 14.2441 5.6746 13.7454 6.18053L10.9708 8.99733L11.627 12.9764C11.7451 13.6902 11.0233 14.2344 10.409 13.898L6.97822 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M28.6614 0C28.3622 0 28.0629 0.16135 27.9081 0.486785L26.194 4.10759L22.3589 4.68736C21.6712 4.79128 21.3955 5.6746 21.8943 6.18053L24.6689 8.99733L24.0126 12.9764C23.8945 13.6902 24.6164 14.2344 25.2306 13.898L28.6614 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M28.6179 0C28.9171 0 29.2164 0.16135 29.3712 0.486785L31.0853 4.10759L34.9204 4.68736C35.6081 4.79128 35.8838 5.6746 35.385 6.18053L32.6104 8.99733L33.2667 12.9764C33.3848 13.6902 32.6629 14.2344 32.0487 13.898L28.6179 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M50.2972 0C49.9979 0 49.6987 0.16135 49.5438 0.486785L47.8297 4.10759L43.9946 4.68736C43.3069 4.79128 43.0313 5.6746 43.53 6.18053L46.3046 8.99733L45.6484 12.9764C45.5302 13.6902 46.2521 14.2344 46.8663 13.898L50.2972 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M50.2536 0C50.5529 0 50.8521 0.16135 51.007 0.486785L52.7211 4.10759L56.5561 4.68736C57.2439 4.79128 57.5195 5.6746 57.0208 6.18053L54.2462 8.99733L54.9024 12.9764C55.0205 13.6902 54.2987 14.2344 53.6844 13.898L50.2536 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M71.9329 0C71.6337 0 71.3344 0.16135 71.1796 0.486785L69.4655 4.10759L65.6304 4.68736C64.9426 4.79128 64.667 5.6746 65.1658 6.18053L67.9404 8.99733L67.2841 12.9764C67.166 13.6902 67.8879 14.2344 68.5021 13.898L71.9329 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M71.8893 0C72.1886 0 72.4878 0.16135 72.6427 0.486785L74.3568 4.10759L78.1919 4.68736C78.8796 4.79128 79.1552 5.6746 78.6565 6.18053L75.8819 8.99733L76.5382 12.9764C76.6563 13.6902 75.9344 14.2344 75.3202 13.898L71.8893 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M94 0C93.6591 0 93.3181 0.16135 93.1417 0.486785L91.1888 4.10759L86.8195 4.68736C86.0359 4.79128 85.7219 5.6746 86.2901 6.18053L89.4512 8.99733L88.7036 12.9764C88.569 13.6902 89.3914 14.2344 90.0912 13.898L94 12.022V0Z"
+                                                                            fill="#FBB03B" />
+                                                                        <path
+                                                                            d="M96.0076 4.32099L94.5 1.1264V11.7259L97.6606 13.4596L97.6609 13.4598C97.7774 13.5237 97.8987 13.5086 97.999 13.4325C98.1011 13.3552 98.1681 13.2217 98.1411 13.0578L98.141 13.0575L97.4868 9.07844L97.4456 8.82806L97.6234 8.64701L100.389 5.83021L100.39 5.83007C100.495 5.72254 100.524 5.57245 100.481 5.43147C100.437 5.29109 100.336 5.20106 100.208 5.18171L100.208 5.18171L96.3848 4.60194L96.1214 4.56199L96.0076 4.32099Z"
+                                                                            stroke="#FBB03B" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>4.8</span>
+                                                            </div>
+                                                            <p class="wrapper-details">
+                                                                Was a nice expirence visiting Lancanster when i was in
+                                                                Ghana last summer
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                                <a href="#" class="primary-btn">
+                                                    <span>See More Reviews</span>
+                                                    <span>
+                                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M1.25 10.5L5.04289 6.70711C5.37623 6.37377 5.54289 6.20711 5.54289 6C5.54289 5.79289 5.37623 5.62623 5.04289 5.29289L1.25 1.5"
+                                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample8">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                            aria-expanded="false" aria-controls="flush-collapseEight">
+                                            <span class="accordion-text">Write Your Review</span>
+                                            <span class="accordion-icon">
+                                                <svg width="17" height="8" viewBox="0 0 17 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8.5 7L16 1" stroke="#1C1C1C" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseEight" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionFlushExample8">
+                                        <div class="accordion-body">
+                                            <div class="accordion-form contact-form">
+                                                <div class="form-section">
+                                                    <div class="form-review">
+                                                        <span>
+                                                            <svg width="97" height="16" viewBox="0 0 97 16" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M17 6.35637C16.8783 6.4763 16.7566 6.62621 16.6349 6.74614C15.3571 7.85551 14.0793 8.93489 12.8015 10.0143C12.6798 10.1042 12.6493 10.1942 12.7102 10.3441C13.1057 12.0231 13.5012 13.7321 13.8967 15.4112C13.9576 15.6211 13.9272 15.801 13.7446 15.9209C13.5621 16.0408 13.3795 16.0108 13.197 15.9209C11.6758 15.0214 10.185 14.1219 8.66378 13.2224C8.54208 13.1325 8.45081 13.1325 8.32911 13.2224C6.83833 14.1219 5.31712 15.0214 3.82634 15.8909C3.70464 15.9809 3.55252 16.0108 3.4004 15.9809C3.15701 15.9209 3.03531 15.681 3.09616 15.4112C3.33955 14.4218 3.55252 13.4323 3.79591 12.4429C3.97846 11.7233 4.13058 11.0037 4.31312 10.2841C4.34355 10.1642 4.31312 10.1042 4.22185 10.0143C2.91361 8.90491 1.6358 7.79554 0.327559 6.68618C0.266711 6.62621 0.205862 6.59623 0.175438 6.53626C0.0233173 6.41633 -0.037531 6.26642 0.0233173 6.05654C0.0841656 5.87664 0.236286 5.78669 0.418831 5.75671C0.692649 5.72673 0.966466 5.69674 1.27071 5.69674C2.5181 5.57681 3.76549 5.48686 5.0433 5.36693C5.2867 5.33695 5.53009 5.30697 5.77348 5.30697C5.89518 5.30697 5.95603 5.247 5.98645 5.15705C6.68621 3.53798 7.35554 1.94889 8.0553 0.329811C8.14657 0.149914 8.23784 0.0299829 8.45081 0C8.6942 0.0599657 8.84632 0.149914 8.9376 0.389777C9.30269 1.2293 9.66778 2.0988 10.0329 2.93832C10.3675 3.68789 10.6718 4.46745 11.0064 5.21702C11.0369 5.30697 11.0977 5.36693 11.2194 5.36693C12.193 5.45688 13.1666 5.51685 14.1706 5.60679C14.9616 5.66676 15.783 5.75671 16.5741 5.81667C16.787 5.84666 16.9087 5.96659 17 6.14649C17 6.20645 17 6.2964 17 6.35637Z"
+                                                                    fill="#B1B1B1" />
+                                                                <path
+                                                                    d="M56.8996 6.35637C56.7793 6.4763 56.6591 6.62621 56.5388 6.74614C55.276 7.85551 54.0133 8.93489 52.7505 10.0143C52.6302 10.1042 52.6001 10.1942 52.6603 10.3441C53.0511 12.0231 53.442 13.7321 53.8329 15.4112C53.893 15.6211 53.8629 15.801 53.6825 15.9209C53.5021 16.0408 53.3217 16.0108 53.1413 15.9209C51.638 15.0214 50.1648 14.1219 48.6615 13.2224C48.5412 13.1325 48.451 13.1325 48.3307 13.2224C46.8575 14.1219 45.3542 15.0214 43.8809 15.8909C43.7607 15.9809 43.6103 16.0108 43.46 15.9809C43.2195 15.9209 43.0992 15.681 43.1593 15.4112C43.3999 14.4218 43.6103 13.4323 43.8509 12.4429C44.0313 11.7233 44.1816 11.0037 44.362 10.2841C44.3921 10.1642 44.362 10.1042 44.2718 10.0143C42.9789 8.90491 41.7162 7.79554 40.4233 6.68618C40.3632 6.62621 40.303 6.59623 40.273 6.53626C40.1227 6.41633 40.0625 6.26642 40.1227 6.05654C40.1828 5.87664 40.3331 5.78669 40.5135 5.75671C40.7841 5.72673 41.0547 5.69674 41.3554 5.69674C42.5881 5.57681 43.8208 5.48686 45.0836 5.36693C45.3241 5.33695 45.5646 5.30697 45.8052 5.30697C45.9254 5.30697 45.9856 5.247 46.0156 5.15705C46.7072 3.53798 47.3686 1.94889 48.0601 0.329811C48.1503 0.149914 48.2405 0.0299829 48.451 0C48.6915 0.0599657 48.8419 0.149914 48.9321 0.389777C49.2929 1.2293 49.6536 2.0988 50.0144 2.93832C50.3452 3.68789 50.6458 4.46745 50.9766 5.21702C51.0066 5.30697 51.0668 5.36693 51.187 5.36693C52.1491 5.45688 53.1113 5.51685 54.1034 5.60679C54.8852 5.66676 55.697 5.75671 56.4787 5.81667C56.6891 5.84666 56.8094 5.96659 56.8996 6.14649C56.8996 6.20645 56.8996 6.2964 56.8996 6.35637Z"
+                                                                    fill="#B1B1B1" />
+                                                                <path
+                                                                    d="M36.8996 6.35637C36.7793 6.4763 36.6591 6.62621 36.5388 6.74614C35.276 7.85551 34.0133 8.93489 32.7505 10.0143C32.6302 10.1042 32.6001 10.1942 32.6603 10.3441C33.0511 12.0231 33.442 13.7321 33.8329 15.4112C33.893 15.6211 33.8629 15.801 33.6825 15.9209C33.5021 16.0408 33.3217 16.0108 33.1413 15.9209C31.638 15.0214 30.1648 14.1219 28.6615 13.2224C28.5412 13.1325 28.451 13.1325 28.3307 13.2224C26.8575 14.1219 25.3542 15.0214 23.8809 15.8909C23.7607 15.9809 23.6103 16.0108 23.46 15.9809C23.2195 15.9209 23.0992 15.681 23.1593 15.4112C23.3999 14.4218 23.6103 13.4323 23.8509 12.4429C24.0313 11.7233 24.1816 11.0037 24.362 10.2841C24.3921 10.1642 24.362 10.1042 24.2718 10.0143C22.9789 8.90491 21.7162 7.79554 20.4233 6.68618C20.3632 6.62621 20.303 6.59623 20.273 6.53626C20.1227 6.41633 20.0625 6.26642 20.1227 6.05654C20.1828 5.87664 20.3331 5.78669 20.5135 5.75671C20.7841 5.72673 21.0547 5.69674 21.3554 5.69674C22.5881 5.57681 23.8208 5.48686 25.0836 5.36693C25.3241 5.33695 25.5646 5.30697 25.8052 5.30697C25.9254 5.30697 25.9856 5.247 26.0156 5.15705C26.7072 3.53798 27.3686 1.94889 28.0601 0.329811C28.1503 0.149914 28.2405 0.0299829 28.451 0C28.6915 0.0599657 28.8419 0.149914 28.9321 0.389777C29.2929 1.2293 29.6536 2.0988 30.0144 2.93832C30.3452 3.68789 30.6458 4.46745 30.9766 5.21702C31.0066 5.30697 31.0668 5.36693 31.187 5.36693C32.1491 5.45688 33.1113 5.51685 34.1034 5.60679C34.8852 5.66676 35.697 5.75671 36.4787 5.81667C36.6891 5.84666 36.8094 5.96659 36.8996 6.14649C36.8996 6.20645 36.8996 6.2964 36.8996 6.35637Z"
+                                                                    fill="#B1B1B1" />
+                                                                <path
+                                                                    d="M76.8996 6.35637C76.7793 6.4763 76.6591 6.62621 76.5388 6.74614C75.276 7.85551 74.0133 8.93489 72.7505 10.0143C72.6302 10.1042 72.6001 10.1942 72.6603 10.3441C73.0511 12.0231 73.442 13.7321 73.8329 15.4112C73.893 15.6211 73.8629 15.801 73.6825 15.9209C73.5021 16.0408 73.3217 16.0108 73.1413 15.9209C71.638 15.0214 70.1648 14.1219 68.6615 13.2224C68.5412 13.1325 68.451 13.1325 68.3307 13.2224C66.8575 14.1219 65.3542 15.0214 63.8809 15.8909C63.7607 15.9809 63.6103 16.0108 63.46 15.9809C63.2195 15.9209 63.0992 15.681 63.1593 15.4112C63.3999 14.4218 63.6103 13.4323 63.8509 12.4429C64.0313 11.7233 64.1816 11.0037 64.362 10.2841C64.3921 10.1642 64.362 10.1042 64.2718 10.0143C62.9789 8.90491 61.7162 7.79554 60.4233 6.68618C60.3632 6.62621 60.303 6.59623 60.273 6.53626C60.1227 6.41633 60.0625 6.26642 60.1227 6.05654C60.1828 5.87664 60.3331 5.78669 60.5135 5.75671C60.7841 5.72673 61.0547 5.69674 61.3554 5.69674C62.5881 5.57681 63.8208 5.48686 65.0836 5.36693C65.3241 5.33695 65.5646 5.30697 65.8052 5.30697C65.9254 5.30697 65.9856 5.247 66.0156 5.15705C66.7072 3.53798 67.3686 1.94889 68.0601 0.329811C68.1503 0.149914 68.2405 0.0299829 68.451 0C68.6915 0.0599657 68.8419 0.149914 68.9321 0.389777C69.2929 1.2293 69.6536 2.0988 70.0144 2.93832C70.3452 3.68789 70.6458 4.46745 70.9766 5.21702C71.0066 5.30697 71.0668 5.36693 71.187 5.36693C72.1491 5.45688 73.1113 5.51685 74.1034 5.60679C74.8852 5.66676 75.697 5.75671 76.4787 5.81667C76.6891 5.84666 76.8094 5.96659 76.8996 6.14649C76.8996 6.20645 76.8996 6.2964 76.8996 6.35637Z"
+                                                                    fill="#B1B1B1" />
+                                                                <path
+                                                                    d="M96.8996 6.35637C96.7793 6.4763 96.6591 6.62621 96.5388 6.74614C95.276 7.85551 94.0133 8.93489 92.7505 10.0143C92.6302 10.1042 92.6001 10.1942 92.6603 10.3441C93.0511 12.0231 93.442 13.7321 93.8329 15.4112C93.893 15.6211 93.8629 15.801 93.6825 15.9209C93.5021 16.0408 93.3217 16.0108 93.1413 15.9209C91.638 15.0214 90.1648 14.1219 88.6615 13.2224C88.5412 13.1325 88.451 13.1325 88.3307 13.2224C86.8575 14.1219 85.3542 15.0214 83.8809 15.8909C83.7607 15.9809 83.6103 16.0108 83.46 15.9809C83.2195 15.9209 83.0992 15.681 83.1593 15.4112C83.3999 14.4218 83.6103 13.4323 83.8509 12.4429C84.0313 11.7233 84.1816 11.0037 84.362 10.2841C84.3921 10.1642 84.362 10.1042 84.2718 10.0143C82.9789 8.90491 81.7162 7.79554 80.4233 6.68618C80.3632 6.62621 80.303 6.59623 80.273 6.53626C80.1227 6.41633 80.0625 6.26642 80.1227 6.05654C80.1828 5.87664 80.3331 5.78669 80.5135 5.75671C80.7841 5.72673 81.0547 5.69674 81.3554 5.69674C82.5881 5.57681 83.8208 5.48686 85.0836 5.36693C85.3241 5.33695 85.5646 5.30697 85.8052 5.30697C85.9254 5.30697 85.9856 5.247 86.0156 5.15705C86.7072 3.53798 87.3686 1.94889 88.0601 0.329811C88.1503 0.149914 88.2405 0.0299829 88.451 0C88.6915 0.0599657 88.8419 0.149914 88.9321 0.389777C89.2929 1.2293 89.6536 2.0988 90.0144 2.93832C90.3452 3.68789 90.6458 4.46745 90.9766 5.21702C91.0066 5.30697 91.0668 5.36693 91.187 5.36693C92.1491 5.45688 93.1113 5.51685 94.1034 5.60679C94.8852 5.66676 95.697 5.75671 96.4787 5.81667C96.6891 5.84666 96.8094 5.96659 96.8996 6.14649C96.8996 6.20645 96.8996 6.2964 96.8996 6.35637Z"
+                                                                    fill="#B1B1B1" />
+                                                            </svg>
+                                                        </span>
+                                                        <span> (0.0) </span>
+                                                    </div>
+                                                    <div class="form-input">
+                                                        <div class="form-item">
+                                                            <label for="name">Name*</label>
+                                                            <input type="text" class="name form-control" id="name"
+                                                                placeholder="Name Here" />
+                                                        </div>
+                                                        <div class="form-item">
+                                                            <label for="email">Email*</label>
+                                                            <input type="email" class="email form-control" id="email"
+                                                                placeholder="Email Address" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-input">
+                                                        <div class="form-item">
+                                                            <label for="name">About Description*</label>
+                                                            <textarea placeholder="Description here"
+                                                                rows="8"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-input">
+                                                        <a href="#" class="primary-btn">
+                                                            <span>Send Reviews</span>
+                                                            <span>
+                                                                <svg width="7" height="15" viewBox="0 0 7 12"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M1.25 10.5L5.04289 6.70711C5.37623 6.37377 5.54289 6.20711 5.54289 6C5.54289 5.79289 5.37623 5.62623 5.04289 5.29289L1.25 1.5"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
+                                                                </svg>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hotel-post-section">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hotel-post agent-wrapper">
+                                    <div class="wrapper-img">
+                                        <img src="assets/img/wrapper-img/lancaster_kumasi_city.jpg" alt="img"
+                                            style="border: 2px solid #2e2e2e;border-radius: 50%;" />
+                                        <span class="img-text">Hotel</span>
+                                    </div>
+                                    <div class="wrapper-item">
+                                        <div class="wrapper-content">
+                                            <h3 class="wrapper-title">Lancaster Hotel-Kumasi</h3>
+                                            <p class="wrapper-detail">Member Since 2025</p>
+                                            <div class="contact-list">
+                                                <div class="contact-box">
+                                                    <div class="contact-icon">
+                                                        <span>
+                                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M11.6667 12.5557L11.5196 13.2911C11.8512 13.3574 12.1862 13.1936 12.3375 12.8911L11.6667 12.5557ZM5.44444 6.33346L5.10903 5.66263C4.80653 5.81389 4.64268 6.1489 4.70901 6.48054L5.44444 6.33346ZM5.75913 6.17612L6.09454 6.84694H6.09454L5.75913 6.17612ZM6.6147 3.92577L7.31106 3.64723L6.6147 3.92577ZM5.89146 2.11765L5.1951 2.39619V2.39619L5.89146 2.11765ZM15.8825 12.1087L15.6039 12.805L15.8825 12.1087ZM14.0744 11.3854L14.3529 10.6891L14.0744 11.3854ZM11.824 12.241L12.4948 12.5764V12.5764L11.824 12.241ZM12.6944 8.11123C12.6944 8.52545 13.0302 8.86123 13.4444 8.86123C13.8587 8.86123 14.1944 8.52545 14.1944 8.11123H12.6944ZM13.1738 6.75058L13.8667 6.46357L13.1738 6.75058ZM11.2495 4.82633L11.5366 4.13342L11.2495 4.82633ZM9.88889 3.80568C9.47468 3.80568 9.13889 4.14146 9.13889 4.55568C9.13889 4.96989 9.47468 5.30568 9.88889 5.30568V3.80568ZM16.25 8.11123C16.25 8.52545 16.5858 8.86123 17 8.86123C17.4142 8.86123 17.75 8.52545 17.75 8.11123H16.25ZM16.4587 5.38993L17.1516 5.10292L16.4587 5.38993ZM12.6102 1.54142L12.8972 0.848513V0.848513L12.6102 1.54142ZM9.88889 0.250122C9.47468 0.250122 9.13889 0.585909 9.13889 1.00012C9.13889 1.41434 9.47468 1.75012 9.88889 1.75012V0.250122ZM16.25 13.7593V15.2223H17.75V13.7593H16.25ZM2.77778 1.75012H4.24083V0.250122H2.77778V1.75012ZM11.6667 12.5557C11.8138 11.8202 11.814 11.8203 11.8142 11.8203C11.8142 11.8203 11.8144 11.8204 11.8145 11.8204C11.8148 11.8204 11.815 11.8205 11.8151 11.8205C11.8154 11.8206 11.8156 11.8206 11.8157 11.8206C11.8158 11.8207 11.8154 11.8206 11.8145 11.8204C11.8127 11.82 11.8088 11.8192 11.803 11.8179C11.7913 11.8153 11.7717 11.8109 11.745 11.8044C11.6914 11.7913 11.6092 11.7701 11.5033 11.7389C11.2912 11.6766 10.9864 11.5751 10.6288 11.4219C9.91014 11.1139 8.99947 10.6056 8.197 9.80313L7.13634 10.8638C8.11164 11.8391 9.20097 12.4419 10.0379 12.8006C10.4581 12.9807 10.8199 13.1015 11.08 13.178C11.2103 13.2163 11.3155 13.2436 11.3904 13.2619C11.4279 13.271 11.4579 13.2778 11.4796 13.2826C11.4905 13.285 11.4993 13.2869 11.506 13.2883C11.5093 13.289 11.5121 13.2896 11.5144 13.2901C11.5155 13.2903 11.5165 13.2905 11.5174 13.2907C11.5178 13.2908 11.5182 13.2908 11.5186 13.2909C11.5188 13.291 11.519 13.291 11.5191 13.291C11.5194 13.2911 11.5196 13.2911 11.6667 12.5557ZM8.197 9.80313C7.39453 9.00066 6.88623 8.08998 6.57825 7.37135C6.42499 7.01376 6.32357 6.70891 6.26119 6.49683C6.23005 6.39096 6.20879 6.3087 6.19576 6.25515C6.18926 6.22839 6.18481 6.20884 6.18223 6.19716C6.18094 6.19131 6.18012 6.18744 6.17974 6.18561C6.17954 6.1847 6.17946 6.1843 6.17949 6.18442C6.1795 6.18448 6.17954 6.18468 6.1796 6.185C6.17964 6.18516 6.17968 6.18536 6.17972 6.18558C6.17975 6.1857 6.17979 6.18589 6.1798 6.18595C6.17984 6.18616 6.17988 6.18637 5.44444 6.33346C4.70901 6.48054 4.70905 6.48077 4.7091 6.48101C4.70912 6.4811 4.70917 6.48135 4.70921 6.48153C4.70928 6.48189 4.70936 6.48229 4.70945 6.48272C4.70962 6.48359 4.70983 6.48459 4.71006 6.48572C4.71053 6.488 4.71111 6.49081 4.71181 6.49416C4.71322 6.50085 4.71511 6.50967 4.71751 6.52054C4.7223 6.54227 4.72915 6.5722 4.73826 6.60968C4.75649 6.6846 4.78384 6.78984 4.82214 6.92008C4.89865 7.18022 5.01945 7.54204 5.19953 7.96223C5.55821 8.79915 6.16103 9.88848 7.13634 10.8638L8.197 9.80313ZM5.77985 7.00428L6.09454 6.84694L5.42372 5.50529L5.10903 5.66263L5.77985 7.00428ZM7.31106 3.64723L6.58781 1.83911L5.1951 2.39619L5.91835 4.20432L7.31106 3.64723ZM16.161 11.4123L14.3529 10.6891L13.7958 12.0818L15.6039 12.805L16.161 11.4123ZM11.1532 11.9056L10.9958 12.2203L12.3375 12.8911L12.4948 12.5764L11.1532 11.9056ZM14.3529 10.6891C13.1323 10.2008 11.7411 10.7297 11.1532 11.9056L12.4948 12.5764C12.7339 12.0983 13.2995 11.8833 13.7958 12.0818L14.3529 10.6891ZM6.09454 6.84694C7.27041 6.259 7.79932 4.86787 7.31106 3.64723L5.91835 4.20432C6.11687 4.70062 5.90182 5.26624 5.42372 5.50529L6.09454 6.84694ZM4.24083 1.75012C4.66109 1.75012 5.03902 2.00599 5.1951 2.39619L6.58781 1.83911C6.20394 0.879416 5.27445 0.250122 4.24083 0.250122V1.75012ZM17.75 13.7593C17.75 12.7257 17.1207 11.7962 16.161 11.4123L15.6039 12.805C15.9941 12.9611 16.25 13.339 16.25 13.7593H17.75ZM15.2222 16.2501C7.78172 16.2501 1.75 10.2184 1.75 2.7779H0.25C0.25 11.0468 6.95329 17.7501 15.2222 17.7501V16.2501ZM15.2222 17.7501C16.6183 17.7501 17.75 16.6184 17.75 15.2223H16.25C16.25 15.79 15.7898 16.2501 15.2222 16.2501V17.7501ZM1.75 2.7779C1.75 2.21027 2.21015 1.75012 2.77778 1.75012V0.250122C1.38172 0.250122 0.25 1.38185 0.25 2.7779H1.75ZM14.1944 8.11123C14.1944 7.54582 14.0831 6.98594 13.8667 6.46357L12.4809 7.03759C12.6219 7.37798 12.6944 7.7428 12.6944 8.11123H14.1944ZM13.8667 6.46357C13.6503 5.94119 13.3332 5.46655 12.9334 5.06675L11.8727 6.12741C12.1332 6.38793 12.3399 6.69721 12.4809 7.03759L13.8667 6.46357ZM12.9334 5.06675C12.5336 4.66694 12.0589 4.34979 11.5366 4.13342L10.9625 5.51924C11.3029 5.66023 11.6122 5.86689 11.8727 6.12741L12.9334 5.06675ZM11.5366 4.13342C11.0142 3.91704 10.4543 3.80568 9.88889 3.80568V5.30568C10.2573 5.30568 10.6221 5.37825 10.9625 5.51924L11.5366 4.13342ZM17.75 8.11123C17.75 7.0789 17.5467 6.05667 17.1516 5.10292L15.7658 5.67694C16.0855 6.44871 16.25 7.27588 16.25 8.11123H17.75ZM17.1516 5.10292C16.7566 4.14916 16.1775 3.28256 15.4475 2.55259L14.3869 3.61325C14.9776 4.20393 15.4461 4.90518 15.7658 5.67694L17.1516 5.10292ZM15.4475 2.55259C14.7176 1.82262 13.851 1.24357 12.8972 0.848513L12.3232 2.23433C13.0949 2.55401 13.7962 3.02256 14.3869 3.61325L15.4475 2.55259ZM12.8972 0.848513C11.9435 0.453456 10.9212 0.250122 9.88889 0.250122V1.75012C10.7242 1.75012 11.5514 1.91466 12.3232 2.23433L12.8972 0.848513Z"
+                                                                    fill="#2B74FE"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact-content">
+                                                        <a href="#" class="list-text">+233 (123)083 88</a>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-box">
+                                                    <div class="contact-icon">
+                                                        <span>
+                                                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M1 8.00012V4.11123C1 2.39301 2.43269 1.00012 4.2 1.00012H13.8C15.5673 1.00012 17 2.39301 17 4.11123V11.889C17 13.6072 15.5673 15.0001 13.8 15.0001H5.8M4.2 4.88901L7.22496 6.84963C8.29984 7.54631 9.70016 7.54631 10.775 6.84963L13.8 4.88901M1 10.3335H5.8M1 12.6668H5.8"
+                                                                    stroke="#2B74FE" stroke-width="1.5"
+                                                                    stroke-linecap="round"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact-content">
+                                                        <a href="malito:lancasterhotel@gmail.com"
+                                                            class="list-text"><span class="__cf_email__"
+                                                                data-cfemail="7716151302055905181f1a16194547474437101a161e1b5914181a">Email
+                                                                Lancaster Hotel</span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-box">
+                                                    <div class="contact-icon">
+                                                        <span>
+                                                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3 20.2501C2.58579 20.2501 2.25 20.5859 2.25 21.0001C2.25 21.4143 2.58579 21.7501 3 21.7501V20.2501ZM15 21.7501C15.4142 21.7501 15.75 21.4143 15.75 21.0001C15.75 20.5859 15.4142 20.2501 15 20.2501V21.7501ZM15.75 8.50012C15.75 10.2066 14.6599 12.4137 13.1547 14.247C12.4148 15.1482 11.6072 15.918 10.8465 16.4555C10.0624 17.0096 9.42269 17.2501 9 17.2501V18.7501C9.88982 18.7501 10.8438 18.2941 11.7121 17.6805C12.6038 17.0505 13.5071 16.1816 14.314 15.1988C15.9026 13.2639 17.25 10.721 17.25 8.50012H15.75ZM9 17.2501C8.59247 17.2501 7.95947 16.9994 7.171 16.4075C6.409 15.8354 5.59932 15.018 4.85679 14.0669C3.34675 12.1328 2.25 9.8251 2.25 8.11123H0.75C0.75 10.3247 2.09075 12.9615 3.67446 14.99C4.4788 16.0202 5.38006 16.9386 6.27041 17.607C7.13428 18.2556 8.09503 18.7501 9 18.7501V17.2501ZM2.25 8.11123C2.25 4.48071 5.47857 1.75012 9 1.75012V0.250122C4.78944 0.250122 0.75 3.51953 0.75 8.11123H2.25ZM9 1.75012C12.4938 1.75012 15.75 4.45516 15.75 8.50012H17.25C17.25 3.54509 13.2382 0.250122 9 0.250122V1.75012ZM11.25 8.00012C11.25 9.24276 10.2426 10.2501 9 10.2501V11.7501C11.0711 11.7501 12.75 10.0712 12.75 8.00012H11.25ZM9 10.2501C7.75736 10.2501 6.75 9.24276 6.75 8.00012H5.25C5.25 10.0712 6.92893 11.7501 9 11.7501V10.2501ZM6.75 8.00012C6.75 6.75748 7.75736 5.75012 9 5.75012V4.25012C6.92893 4.25012 5.25 5.92905 5.25 8.00012H6.75ZM9 5.75012C10.2426 5.75012 11.25 6.75748 11.25 8.00012H12.75C12.75 5.92905 11.0711 4.25012 9 4.25012V5.75012ZM3 21.7501H15V20.2501H3V21.7501Z"
+                                                                    fill="#2B74FE"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact-content">
+                                                        <p class="list-text">Ahodwo Nhyieso Harper Road-Kumasi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contact-form">
+                                            <div class="form-section">
+                                                <div class="form-input">
+                                                    <div class="form-item">
+                                                        <input type="text" class="name form-control" id="wname"
+                                                            placeholder="Name Here" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-input">
+                                                    <div class="form-item">
+                                                        <input type="email" class="name form-control" id="wemail"
+                                                            placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-input">
+                                                    <div class="form-item">
+                                                        <input type="tel" class="name form-control" id="wphone"
+                                                            placeholder="Phone Number" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-input">
+                                                    <div class="form-item">
+                                                        <textarea placeholder="Description" rows="8"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-input">
+                                                    <a href="booking.html" class="primary-btn">
+                                                        <span>Make Reservation</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="hotel-post">
+                                    <div class="wrapper-content">
+                                        <h3 class="post-title">Opening Hours</h3>
+                                    </div>
+                                    <div class="wrapper-list section-list">
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Monday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Tuesday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Wednesday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Thursday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Friday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Saturday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="list-date">
+                                                <span>
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 0.999998 11 0.999999C5.47715 0.999999 0.999999 5.47715 1 11"
+                                                            stroke="#666565" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path d="M11 21C5.47715 21 1 16.5228 1 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-dasharray="0.5 3" />
+                                                        <path
+                                                            d="M12.5 11C12.5 11.8284 11.8284 12.5 11 12.5C10.1716 12.5 9.5 11.8284 9.5 11C9.5 10.1716 10.1716 9.5 11 9.5C11.8284 9.5 12.5 10.1716 12.5 11Z"
+                                                            stroke="#666565" stroke-width="1.5" />
+                                                        <path d="M11 12.5L11 15M5 11L9.5 11" stroke="#666565"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                <p>Sunday</p>
+                                            </div>
+                                            <p class="list-time">24/7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-img">
+            <img src="assets/img/background/newsletter-bg.png" alt="img" />
+        </div>
+        <div class="container">
+            <div class="newsletter-section">
+                <div class="location">
+                    <div class="section-title">
+                        <span class="subtitle">Explore our Rooms</span>
+                        <h2 class="heading">
+                            Perfect Location for a <br />
+                            Relaxing Vacation
+                        </h2>
+                    </div>
+                    <a href="contact-us.html" class="primary-btn">
+                        <span>Contact Us</span>
+                        <span>
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 10L4.79289 6.20711C5.12623 5.87377 5.29289 5.70711 5.29289 5.5C5.29289 5.29289 5.12623 5.12623 4.79289 4.79289L1 1"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="subscribe">
+                    <div class="section-title">
+                        <span class="subtitle">Newsletter</span>
+                        <h2 class="heading">Subscribe To Our Newsletter</h2>
+                    </div>
+                    <div class="subscribe-btn">
+                        <input type="email" placeholder="Email Address" />
+                        <a href="contact-us.html" class="primary-btn">
+                            <span>Sign Up</span>
+                            <span>
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 10L4.79289 6.20711C5.12623 5.87377 5.29289 5.70711 5.29289 5.5C5.29289 5.29289 5.12623 5.12623 4.79289 4.79289L1 1"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="background: url(assets/img/background/footer-bg.png)">
+        <div class="container">
+            <div class="footer-section">
+                <div class="row gy-5 gy-sm-0">
+                    <div class="col-lg-4">
+                        <div class="footer-content-section">
+                            <div class="footer-logo">
+                                <img src="assets/img/logo/footer-logo.png" alt="img" />
+                            </div>
+                            <div class="footer-content">
+                                <p class="footer-detail">
+                                    SEO agencies typically work businesses of <br />
+                                    all sizes across various industries to help <br />
+                                    them achieve their online
+                                </p>
+                            </div>
+                            <div class="social-item">
+                                <a href="https://twitter.com/?lang=en" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.286 1C11.1821 1 9.47661 2.79086 9.47661 5C9.47661 5.33382 9.51555 5.65809 9.58893 5.96808C7.3 5.96808 3.7 5.44444 1 1.88889C1 10.7778 4.6 13.2963 6.4 13.4444C5.05 14.7778 2.9465 15.7647 1 15.9503C1.83744 16.7106 4.46043 16.9669 5.66725 17C11.9081 17 16.9805 11.7471 17.0934 5.22229C18.2903 4.44391 18.8588 2.33377 19 1.88889C18.4169 2.50119 17.2 2.77778 16.2303 2.46181C15.5317 1.56927 14.4721 1 13.286 1Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor"
+                                                stroke-width="1.5" />
+                                            <circle cx="17" cy="5" r="1" fill="currentColor" stroke="currentColor"
+                                                stroke-width="1.5" />
+                                            <circle cx="11" cy="11" r="5" stroke="currentColor" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="https://www.snapchat.com/" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21 16C19.8979 16 19.1559 16 18.6353 16.5886C18.0274 17.2761 17.3562 18 16.4384 18H15.6667C15.2339 18 14.8129 18.1404 14.4667 18.4L13.4 19.2C11.9778 20.2667 10.0222 20.2667 8.60001 19.2L7.53333 18.4C7.18714 18.1404 6.76608 18 6.33334 18L5.56154 18C4.64381 18 3.97263 17.2761 3.36467 16.5886C2.84415 16 2.10208 16 1 16L3.39999 14.2C4.40722 13.4446 5 12.259 5 11V10.5L4.49999 10.5C3.67157 10.5 3 9.82843 3 9C3 8.17158 3.67158 7.5 4.50001 7.5H5V7.00001C5 3.6863 7.6863 1 11 1.00001C14.3137 1.00001 17 3.6863 17 7.00001V7.5H17.5C18.3284 7.5 19 8.17158 19 9C19 9.82843 18.3284 10.5 17.5 10.5L17 10.5V11C17 12.259 17.5928 13.4446 18.6 14.2L21 16Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="https://www.pinterest.com/" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5 19.0005C2.57111 17.1761 1 14.2714 1 10.9998C1 5.47691 5.47715 0.999756 11 0.999756C16.5228 0.999756 21 5.47691 21 10.9998C21 16.5226 16.5228 20.9998 11 20.9998C9.9064 20.9998 8.8538 20.8242 7.86884 20.4998L10.5 10.4998"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M9.17253 15.6553C9.73859 15.8776 10.355 15.9998 11 15.9998C13.7614 15.9998 16 13.7612 16 10.9998C16 8.23833 13.7614 5.99976 11 5.99976C8.23858 5.99976 6 8.23833 6 10.9998C6 11.9105 6.24349 12.7643 6.66891 13.4998"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer-link-section">
+                            <div class="row gy-5">
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="footer-link">
+                                        <h3 class="title">Services</h3>
+                                        <ul class="section-list">
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text"> GYM and Spa </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Pick Up & Drop</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Restaurant</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Swimming Pool</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Parking Space</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="footer-link">
+                                        <h3 class="title">Popular links</h3>
+                                        <ul class="section-list">
+                                            <li>
+                                                <a href="contact-us.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Help & Support</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="terms-condition.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Trust & Safety</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">FAQ’s</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Feature Hotels</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Hotel Booking</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="footer-link contact-link">
+                                        <h3 class="title">Contact Us</h3>
+                                        <div class="section-list">
+                                            <div class="contact-box">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.6667 12.5557L11.5196 13.2911C11.8512 13.3574 12.1862 13.1936 12.3375 12.8911L11.6667 12.5557ZM5.44444 6.33346L5.10903 5.66263C4.80653 5.81389 4.64268 6.1489 4.70901 6.48054L5.44444 6.33346ZM5.75913 6.17612L6.09454 6.84694H6.09454L5.75913 6.17612ZM6.6147 3.92577L7.31106 3.64723L6.6147 3.92577ZM5.89146 2.11765L5.1951 2.39619V2.39619L5.89146 2.11765ZM15.8825 12.1087L15.6039 12.805L15.8825 12.1087ZM14.0744 11.3854L14.3529 10.6891L14.0744 11.3854ZM11.824 12.241L12.4948 12.5764V12.5764L11.824 12.241ZM12.6944 8.11123C12.6944 8.52545 13.0302 8.86123 13.4444 8.86123C13.8587 8.86123 14.1944 8.52545 14.1944 8.11123H12.6944ZM13.1738 6.75058L13.8667 6.46357L13.1738 6.75058ZM11.2495 4.82633L11.5366 4.13342L11.2495 4.82633ZM9.88889 3.80568C9.47468 3.80568 9.13889 4.14146 9.13889 4.55568C9.13889 4.96989 9.47468 5.30568 9.88889 5.30568V3.80568ZM16.25 8.11123C16.25 8.52545 16.5858 8.86123 17 8.86123C17.4142 8.86123 17.75 8.52545 17.75 8.11123H16.25ZM16.4587 5.38993L17.1516 5.10292L16.4587 5.38993ZM12.6102 1.54142L12.8972 0.848513V0.848513L12.6102 1.54142ZM9.88889 0.250122C9.47468 0.250122 9.13889 0.585909 9.13889 1.00012C9.13889 1.41434 9.47468 1.75012 9.88889 1.75012V0.250122ZM16.25 13.7593V15.2223H17.75V13.7593H16.25ZM2.77778 1.75012H4.24083V0.250122H2.77778V1.75012ZM11.6667 12.5557C11.8138 11.8202 11.814 11.8203 11.8142 11.8203C11.8142 11.8203 11.8144 11.8204 11.8145 11.8204C11.8148 11.8204 11.815 11.8205 11.8151 11.8205C11.8154 11.8206 11.8156 11.8206 11.8157 11.8206C11.8158 11.8207 11.8154 11.8206 11.8145 11.8204C11.8127 11.82 11.8088 11.8192 11.803 11.8179C11.7913 11.8153 11.7717 11.8109 11.745 11.8044C11.6914 11.7913 11.6092 11.7701 11.5033 11.7389C11.2912 11.6766 10.9864 11.5751 10.6288 11.4219C9.91014 11.1139 8.99947 10.6056 8.197 9.80313L7.13634 10.8638C8.11164 11.8391 9.20097 12.4419 10.0379 12.8006C10.4581 12.9807 10.8199 13.1015 11.08 13.178C11.2103 13.2163 11.3155 13.2436 11.3904 13.2619C11.4279 13.271 11.4579 13.2778 11.4796 13.2826C11.4905 13.285 11.4993 13.2869 11.506 13.2883C11.5093 13.289 11.5121 13.2896 11.5144 13.2901C11.5155 13.2903 11.5165 13.2905 11.5174 13.2907C11.5178 13.2908 11.5182 13.2908 11.5186 13.2909C11.5188 13.291 11.519 13.291 11.5191 13.291C11.5194 13.2911 11.5196 13.2911 11.6667 12.5557ZM8.197 9.80313C7.39453 9.00066 6.88623 8.08998 6.57825 7.37135C6.42499 7.01376 6.32357 6.70891 6.26119 6.49683C6.23005 6.39096 6.20879 6.3087 6.19576 6.25515C6.18926 6.22839 6.18481 6.20884 6.18223 6.19716C6.18094 6.19131 6.18012 6.18744 6.17974 6.18561C6.17954 6.1847 6.17946 6.1843 6.17949 6.18442C6.1795 6.18448 6.17954 6.18468 6.1796 6.185C6.17964 6.18516 6.17968 6.18536 6.17972 6.18558C6.17975 6.1857 6.17979 6.18589 6.1798 6.18595C6.17984 6.18616 6.17988 6.18637 5.44444 6.33346C4.70901 6.48054 4.70905 6.48077 4.7091 6.48101C4.70912 6.4811 4.70917 6.48135 4.70921 6.48153C4.70928 6.48189 4.70936 6.48229 4.70945 6.48272C4.70962 6.48359 4.70983 6.48459 4.71006 6.48572C4.71053 6.488 4.71111 6.49081 4.71181 6.49416C4.71322 6.50085 4.71511 6.50967 4.71751 6.52054C4.7223 6.54227 4.72915 6.5722 4.73826 6.60968C4.75649 6.6846 4.78384 6.78984 4.82214 6.92008C4.89865 7.18022 5.01945 7.54204 5.19953 7.96223C5.55821 8.79915 6.16103 9.88848 7.13634 10.8638L8.197 9.80313ZM5.77985 7.00428L6.09454 6.84694L5.42372 5.50529L5.10903 5.66263L5.77985 7.00428ZM7.31106 3.64723L6.58781 1.83911L5.1951 2.39619L5.91835 4.20432L7.31106 3.64723ZM16.161 11.4123L14.3529 10.6891L13.7958 12.0818L15.6039 12.805L16.161 11.4123ZM11.1532 11.9056L10.9958 12.2203L12.3375 12.8911L12.4948 12.5764L11.1532 11.9056ZM14.3529 10.6891C13.1323 10.2008 11.7411 10.7297 11.1532 11.9056L12.4948 12.5764C12.7339 12.0983 13.2995 11.8833 13.7958 12.0818L14.3529 10.6891ZM6.09454 6.84694C7.27041 6.259 7.79932 4.86787 7.31106 3.64723L5.91835 4.20432C6.11687 4.70062 5.90182 5.26624 5.42372 5.50529L6.09454 6.84694ZM4.24083 1.75012C4.66109 1.75012 5.03902 2.00599 5.1951 2.39619L6.58781 1.83911C6.20394 0.879416 5.27445 0.250122 4.24083 0.250122V1.75012ZM17.75 13.7593C17.75 12.7257 17.1207 11.7962 16.161 11.4123L15.6039 12.805C15.9941 12.9611 16.25 13.339 16.25 13.7593H17.75ZM15.2222 16.2501C7.78172 16.2501 1.75 10.2184 1.75 2.7779H0.25C0.25 11.0468 6.95329 17.7501 15.2222 17.7501V16.2501ZM15.2222 17.7501C16.6183 17.7501 17.75 16.6184 17.75 15.2223H16.25C16.25 15.79 15.7898 16.2501 15.2222 16.2501V17.7501ZM1.75 2.7779C1.75 2.21027 2.21015 1.75012 2.77778 1.75012V0.250122C1.38172 0.250122 0.25 1.38185 0.25 2.7779H1.75ZM14.1944 8.11123C14.1944 7.54582 14.0831 6.98594 13.8667 6.46357L12.4809 7.03759C12.6219 7.37798 12.6944 7.7428 12.6944 8.11123H14.1944ZM13.8667 6.46357C13.6503 5.94119 13.3332 5.46655 12.9334 5.06675L11.8727 6.12741C12.1332 6.38793 12.3399 6.69721 12.4809 7.03759L13.8667 6.46357ZM12.9334 5.06675C12.5336 4.66694 12.0589 4.34979 11.5366 4.13342L10.9625 5.51924C11.3029 5.66023 11.6122 5.86689 11.8727 6.12741L12.9334 5.06675ZM11.5366 4.13342C11.0142 3.91704 10.4543 3.80568 9.88889 3.80568V5.30568C10.2573 5.30568 10.6221 5.37825 10.9625 5.51924L11.5366 4.13342ZM17.75 8.11123C17.75 7.0789 17.5467 6.05667 17.1516 5.10292L15.7658 5.67694C16.0855 6.44871 16.25 7.27588 16.25 8.11123H17.75ZM17.1516 5.10292C16.7566 4.14916 16.1775 3.28256 15.4475 2.55259L14.3869 3.61325C14.9776 4.20393 15.4461 4.90518 15.7658 5.67694L17.1516 5.10292ZM15.4475 2.55259C14.7176 1.82262 13.851 1.24357 12.8972 0.848513L12.3232 2.23433C13.0949 2.55401 13.7962 3.02256 14.3869 3.61325L15.4475 2.55259ZM12.8972 0.848513C11.9435 0.453456 10.9212 0.250122 9.88889 0.250122V1.75012C10.7242 1.75012 11.5514 1.91466 12.3232 2.23433L12.8972 0.848513Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="list-item">+(323) 750-1234</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-box">
+                                                <div class="icon">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1 8.00012V4.11123C1 2.39301 2.43269 1.00012 4.2 1.00012H13.8C15.5673 1.00012 17 2.39301 17 4.11123V11.889C17 13.6072 15.5673 15.0001 13.8 15.0001H5.8M4.2 4.88901L7.22496 6.84963C8.29984 7.54631 9.70016 7.54631 10.775 6.84963L13.8 4.88901M1 10.3335H5.8M1 12.6668H5.8"
+                                                            stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="list-item">
+                                                        <a href="https://quomodothemes.website/cdn-cgi/l/email-protection"
+                                                            class="__cf_email__"
+                                                            data-cfemail="4d24232b223422383f223f3928232e28340d2a202c2421632e2220">[email&#160;protected]</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-box">
+                                                <div class="icon">
+                                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3 20.2501C2.58579 20.2501 2.25 20.5859 2.25 21.0001C2.25 21.4143 2.58579 21.7501 3 21.7501V20.2501ZM15 21.7501C15.4142 21.7501 15.75 21.4143 15.75 21.0001C15.75 20.5859 15.4142 20.2501 15 20.2501V21.7501ZM15.75 8.50012C15.75 10.2066 14.6599 12.4137 13.1547 14.247C12.4148 15.1482 11.6072 15.918 10.8465 16.4555C10.0624 17.0096 9.42269 17.2501 9 17.2501V18.7501C9.88982 18.7501 10.8438 18.2941 11.7121 17.6805C12.6038 17.0505 13.5071 16.1816 14.314 15.1988C15.9026 13.2639 17.25 10.721 17.25 8.50012H15.75ZM9 17.2501C8.59247 17.2501 7.95947 16.9994 7.171 16.4075C6.409 15.8354 5.59932 15.018 4.85679 14.0669C3.34675 12.1328 2.25 9.8251 2.25 8.11123H0.75C0.75 10.3247 2.09075 12.9615 3.67446 14.99C4.4788 16.0202 5.38006 16.9386 6.27041 17.607C7.13428 18.2556 8.09503 18.7501 9 18.7501V17.2501ZM2.25 8.11123C2.25 4.48071 5.47857 1.75012 9 1.75012V0.250122C4.78944 0.250122 0.75 3.51953 0.75 8.11123H2.25ZM9 1.75012C12.4938 1.75012 15.75 4.45516 15.75 8.50012H17.25C17.25 3.54509 13.2382 0.250122 9 0.250122V1.75012ZM11.25 8.00012C11.25 9.24276 10.2426 10.2501 9 10.2501V11.7501C11.0711 11.7501 12.75 10.0712 12.75 8.00012H11.25ZM9 10.2501C7.75736 10.2501 6.75 9.24276 6.75 8.00012H5.25C5.25 10.0712 6.92893 11.7501 9 11.7501V10.2501ZM6.75 8.00012C6.75 6.75748 7.75736 5.75012 9 5.75012V4.25012C6.92893 4.25012 5.25 5.92905 5.25 8.00012H6.75ZM9 5.75012C10.2426 5.75012 11.25 6.75748 11.25 8.00012H12.75C12.75 5.92905 11.0711 4.25012 9 4.25012V5.75012ZM3 21.7501H15V20.2501H3V21.7501Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="list-item">
+                                                        374 A Tower, megas William Road Blvd, Melbourne
+                                                        2721, IL, USA
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-counter">
+                                            <div class="counter-wrapper">
+                                                <h3 class="wrapper-title">47,49,248</h3>
+                                                <p class="list-item">Total Booking</p>
+                                            </div>
+                                            <div class="counter-wrapper">
+                                                <h3 class="wrapper-title">99,472,554</h3>
+                                                <p class="list-item">Active Users</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-section">
+                    <div class="row gy-3 gy-sm-0">
+                        <div class="col-md-6">
+                            <p class="list-item">
+                                2024 © All rights reserved by
+                                <span class="inner-text"> Quomodotheme</span>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="copyright-item">
+                                <a href="privacy-policy.html" class="list-item">Privacy Policy
+                                </a>
+                                <div class="devider"></div>
+                                <a href="terms-condition.html" class="list-item">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backto-top">
+        <span>
+            <svg width="39" height="75" viewBox="0 0 39 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.235 75.0033L18.3095 74.9033C18.3095 74.8866 18.3144 74.87 18.3168 74.8533C18.0878 74.8295 17.8612 74.7866 17.6322 74.7842C15.744 74.7771 13.9751 74.246 12.2526 73.5553C8.50789 72.0526 5.51357 69.6305 3.26965 66.3344C1.58854 63.8623 0.51897 61.145 0.192494 58.1918C0.0268193 56.6914 0.0195101 55.172 0.0146374 53.6597C-0.00485375 47.2818 0.0073282 40.904 1.90292e-05 34.5261C-0.00485375 30.6394 0.925847 27.0099 3.08205 23.7233C5.88146 19.4579 9.78943 16.6548 14.7986 15.3687C16.9281 14.8234 19.0989 14.6257 21.3014 14.8638C27.6384 15.5497 32.5185 18.5529 36.0001 23.7566C37.4546 25.931 38.3902 28.3245 38.7678 30.899C38.9311 32.0183 38.9847 33.1615 38.9896 34.2951C39.0066 41.1397 38.9993 47.982 38.992 54.8267C38.992 55.8531 39.0066 56.8867 38.9092 57.906C38.7021 60.0685 38.0735 62.1238 37.0965 64.0743C35.2741 67.711 32.5843 70.5569 28.9809 72.5384C26.793 73.7435 24.4443 74.5247 21.9348 74.789C21.4987 74.8343 21.0553 74.8319 20.6119 74.8914C20.7386 74.9271 20.8653 74.9652 20.9919 75.001H17.2399L17.235 75.0033ZM3.08449 44.8407H3.08692C3.08692 48.3321 3.06743 51.8235 3.09911 55.3149C3.10885 56.3985 3.18925 57.4893 3.3598 58.5586C3.7618 61.114 4.80458 63.4313 6.40772 65.4747C9.05851 68.8565 12.5133 70.988 16.8355 71.7001C18.8869 72.0383 20.9432 72.024 22.9654 71.5786C26.8271 70.726 30.0236 68.7898 32.4649 65.7152C34.8891 62.662 36.0001 59.1897 35.9831 55.322C35.9489 48.2225 35.9684 41.1207 35.9757 34.0188C35.9757 32.7566 35.8344 31.511 35.5372 30.2893C34.7015 26.8598 32.94 23.9686 30.1698 21.699C26.1522 18.4052 21.5401 17.1835 16.3994 18.1242C12.8374 18.7768 9.82841 20.4748 7.38959 23.1327C4.53901 26.2382 3.12103 29.8797 3.09423 34.0403C3.07231 37.6412 3.08936 41.2398 3.08936 44.8407H3.08449Z"
+                    fill="#2B74FE" />
+                <path
+                    d="M38.9361 56.4858C38.9216 56.381 38.8901 56.2762 38.8901 56.1738C38.8877 48.8671 38.8853 41.5605 38.8877 34.2538C38.8877 34.049 38.9192 33.8442 38.9361 33.6394V56.4882V56.4858Z"
+                    fill="#2B74FE" />
+                <path
+                    d="M11.0364 8.95544C10.9997 8.54635 11.2855 8.24579 11.5541 7.9421C13.5504 5.68165 15.5488 3.42432 17.5473 1.16595C17.7576 0.92801 17.9582 0.681719 18.1815 0.456299C18.7973 -0.166735 19.5609 -0.150037 20.1411 0.504305C22.4113 3.06323 24.6773 5.62529 26.941 8.19048C27.4328 8.74777 27.4005 9.48664 26.8839 9.91556C26.3349 10.3706 25.6479 10.3142 25.1238 9.72667C23.2677 7.6478 21.4234 5.55954 19.577 3.47337C19.1327 2.97139 19.1402 2.97244 18.6765 3.49842C16.8808 5.53345 15.0808 7.5664 13.2829 9.60144C12.9896 9.9333 12.6563 10.1702 12.1764 10.1462C11.5196 10.1149 11.0364 9.63066 11.0364 8.95544Z"
+                    fill="#2B74FE" />
+                <path
+                    d="M16.0442 34.875C16.0442 34.0653 16.0004 33.2508 16.054 32.4434C16.1612 30.8002 17.5231 29.4831 19.2042 29.445C20.9609 29.4046 22.2668 30.6144 22.5275 32.0791C22.6079 32.5339 22.6395 33.0031 22.6395 33.4651C22.6395 34.7393 22.6517 36.0158 22.5908 37.2899C22.508 38.9856 21.0242 40.3217 19.3187 40.3098C17.5694 40.2979 16.1417 38.9737 16.0589 37.2471C16.0223 36.4588 16.0515 35.6657 16.0515 34.875C16.0515 34.875 16.0491 34.875 16.0467 34.875H16.0442Z"
+                    fill="#2B74FE" />
+            </svg>
+        </span>
+    </div>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery_3.7.1.min.js"></script>
+
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <script src="assets/js/bootstrap_5.3.2.bundle.min.js"></script>
+
+    <script src="assets/js/nouislider.min.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/lity.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

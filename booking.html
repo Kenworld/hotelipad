@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" class="favicon" href="assets/img/logo/logo-1.png" />
+
+    <title>Property Details - hotelipad</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-5.3.2.min.css" />
+
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+
+    <link rel="stylesheet" href="css/lity.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header class="header header-three">
+        <div class="header-section d-none d-lg-block">
+
+            <div class="header-nav">
+                <div class="container">
+                    <div class="header-nav-section">
+                        <div class="header-navigation">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo-1.png" alt="logo" />
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="header-btn">
+                            <a href="#" class="list-item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2C7.03 2 3 6.03 3 11V17C3 18.1 3.9 19 5 19H6C6 20.1 6.9 21 8 21H10C11.1 21 12 20.1 12 19H8V18H12C12 19.1 12.9 20 14 20H16C17.1 20 18 19.1 18 18H19C20.1 18 21 17.1 21 16V11C21 6.03 16.97 2 12 2ZM5 17V11C5 7.13 8.13 4 12 4C15.87 4 19 7.13 19 11V17H18V11C18 8.24 15.76 6 13 6C10.24 6 8 8.24 8 11V17H5Z"
+                                        fill="#1A8D03" />
+                                </svg>
+                                </span>
+                                <span class="list-text">Support</span>
+                            </a>
+                            <a href="#" class="list-item" onclick="modalAction('.ticket')">
+                                <span class="list-icon">
+                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="8.77799" cy="17.1112" rx="7.77799" ry="3.88899" stroke="#1A8D03"
+                                            stroke-width="1.4" stroke-linejoin="round" />
+                                        <circle cx="8.77718" cy="5.44456" r="4.44456" stroke="#1A8D03"
+                                            stroke-width="1.4" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="list-text">Login</span>
+                            </a>
+                            <a href="properties.html" class="primary-btn" style="background-color: #1A8D03;">
+                                <span>
+                                    <i class="fa fa-plus"></i>
+                                </span>
+                                <span> List Your Property</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="mobile-menu mobile-menu-three d-block d-lg-none">
+            <div class="mobile-header">
+                <div class="header-logo">
+                    <img src="assets/img/logo/logo-1.png" alt="img" />
+                </div>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                    aria-controls="offcanvasWithBothOptions">
+                    <span>
+                        <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.5 0.875C0.5 0.391751 0.891751 0 1.375 0H20.625C21.1082 0 21.5 0.391751 21.5 0.875C21.5 1.35825 21.1082 1.75 20.625 1.75H1.375C0.891751 1.75 0.5 1.35825 0.5 0.875ZM0.5 7C0.5 6.51675 0.891751 6.125 1.375 6.125H20.625C21.1082 6.125 21.5 6.51675 21.5 7C21.5 7.48325 21.1082 7.875 20.625 7.875H1.375C0.891751 7.875 0.5 7.48325 0.5 7ZM10.125 13.125C10.125 12.6418 10.5168 12.25 11 12.25H20.625C21.1082 12.25 21.5 12.6418 21.5 13.125C21.5 13.6082 21.1082 14 20.625 14H11C10.5168 14 10.125 13.6082 10.125 13.125Z"
+                                fill="#1C1C1C" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+                <div class="offcanvas-header">
+                    <a href="#" class="mobile-logo">
+                        <img src="assets/img/logo/logo-1.png" alt="logo" />
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="mobile-menu-section">
+                        <h4 class="title">Menu</h4>
+                        <ul class="header-menu header-list">
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Home</span>
+                                </a>
+
+                            </li>
+                            <li class="nav-list">
+                                <a href="about-us.html" class="list-item">
+                                    <span class="list-text">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Hotel</span>
+                                </a>
+                                <ul class="d-menu">
+                                    <li>
+                                        <a href="hotel-ameneties.html" class="list-item">
+                                            <span class="list-text">Hotel-Ameneties</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="hotel-details.html" class="list-item">
+                                            <span class="list-text">Hotel-List</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="agent-profile.html" class="list-item">
+                                            <span class="list-text">Agent-Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="hotel-error.html" class="list-item">
+                                            <span class="list-text">Hotel-Error</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Blog</span>
+                                </a>
+                                <ul class="d-menu">
+                                    <li>
+                                        <a href="blog-details.html" class="list-item">
+                                            <span class="list-text">Blog-Details</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-errors.html" class="list-item">
+                                            <span class="list-text">Blog-Error</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-grid.html" class="list-item">
+                                            <span class="list-text">Blog-Grid</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar.html" class="list-item">
+                                            <span class="list-text">Blog-Sidebar</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#" class="list-item">
+                                    <span class="list-text">Pages</span>
+                                </a>
+                                <ul class="d-menu">
+                                    <li>
+                                        <a href="pricing.html" class="list-item">
+                                            <span class="list-text">Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="payment-mathod.html" class="list-item">
+                                            <span class="list-text">Payment-Method</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html" class="list-item">
+                                            <span class="list-text">Privacy-Policy</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-condition.html" class="list-item">
+                                            <span class="list-text">Terms & Condition</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="maintenance.html" class="list-item">
+                                            <span class="list-text">Maintenance</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list">
+                                <a href="faq.html" class="list-item">
+                                    <span class="list-text">FAQ</span>
+                                </a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="contact-us.html" class="list-item">
+                                    <span class="list-text">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal-wrapper ticket modal-wrapper-three">
+        <div onclick="modalAction('.ticket')" class="anywhere-away"></div>
+
+        <div class="login-section account-section modal-main">
+            <div class="contact-form">
+                <div class="section-head">
+                    <div class="section-title">
+                        <h3 class="title">Log in</h3>
+                        <p class="section-detail">Welcome to Hotelsun</p>
+                    </div>
+                    <span class="close-btn" onclick="modalAction('.ticket')">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#1A8D03" />
+                            <path d="M22.2188 9.77734L8.88614 23.1107" stroke="white" stroke-width="1.8"
+                                stroke-linecap="round" />
+                            <path d="M22.2188 23.1099L8.88614 9.77654" stroke="white" stroke-width="1.8"
+                                stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-section">
+                    <div class="form-input">
+                        <div class="form-item">
+                            <label for="name">Name*</label>
+                            <input type="text" class="name form-control" id="name" placeholder="Name Here" />
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password*</label>
+                            <input type="password" class="password form-control" id="password" placeholder="******" />
+                        </div>
+                    </div>
+                    <div class="form-input forget-pass">
+                        <div class="form-item remember">
+                            <input type="checkbox" class="input-check" id="remember" />
+                            <label for="remember">Remeber Me</label>
+                        </div>
+                        <div class="form-item">
+                            <a href="#" class="forget text-end">Forget Password</a>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <a href="dashboard.html" class="primary-btn primary-btn-three">
+                            <span>Login</span>
+                            <span>
+                                <svg width="7" height="15" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.25 10.5L5.04289 6.70711C5.37623 6.37377 5.54289 6.20711 5.54289 6C5.54289 5.79289 5.37623 5.62623 5.04289 5.29289L1.25 1.5"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <h4 class="option">OR</h4>
+                    <div class="wrapper-social">
+                        <div class="social-item">
+                            <a href="#" class="icon-box">
+                                <span class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 12H22" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M20 14L20 10" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M8.5 12H15C15 15.5899 12.0899 18.5 8.5 18.5C4.91015 18.5 2 15.5899 2 12C2 8.41015 4.91015 5.5 8.5 5.5C10.2949 5.5 11.9199 6.22754 13.0962 7.40381"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="icon-box">
+                                <span class="social-icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <circle cx="17" cy="5" r="1" fill="currentColor" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                        <circle cx="11" cy="11" r="5" stroke="currentColor" stroke-width="1.5" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" class="icon-box">
+                                <span class="social-icon">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 16C19.8979 16 19.1559 16 18.6353 16.5886C18.0274 17.2761 17.3562 18 16.4384 18H15.6667C15.2339 18 14.8129 18.1404 14.4667 18.4L13.4 19.2C11.9778 20.2667 10.0222 20.2667 8.60001 19.2L7.53333 18.4C7.18714 18.1404 6.76608 18 6.33334 18L5.56154 18C4.64381 18 3.97263 17.2761 3.36467 16.5886C2.84415 16 2.10208 16 1 16L3.39999 14.2C4.40722 13.4446 5 12.259 5 11V10.5L4.49999 10.5C3.67157 10.5 3 9.82843 3 9C3 8.17158 3.67158 7.5 4.50001 7.5H5V7.00001C5 3.6863 7.6863 1 11 1.00001C14.3137 1.00001 17 3.6863 17 7.00001V7.5H17.5C18.3284 7.5 19 8.17158 19 9C19 9.82843 18.3284 10.5 17.5 10.5L17 10.5V11C17 12.259 17.5928 13.4446 18.6 14.2L21 16Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <span class="account">Dont't have an aceount ? <a href="#">Create Account</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Booking Section -->
+    <section class="container mb-5 mt-5">
+        <h1 class="hotelName mb-4">Lancanster Hotel Kumasi</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Guest Details</h3>
+                        <form id="guestDetailsForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstname" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstname"
+                                        placeholder="Enter first name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastname" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Enter last name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                        required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section Ends-->
+    <section class="newsletter">
+        <div class="newsletter-img">
+            <img src="assets/img/background/newsletter-bg.png" alt="img" />
+        </div>
+        <div class="container">
+            <div class="newsletter-section">
+                <div class="location">
+                    <div class="section-title">
+                        <span class="subtitle">Explore our Rooms</span>
+                        <h2 class="heading">
+                            Perfect Location for a <br />
+                            Relaxing Vacation
+                        </h2>
+                    </div>
+                    <a href="contact-us.html" class="primary-btn">
+                        <span>Contact Us</span>
+                        <span>
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 10L4.79289 6.20711C5.12623 5.87377 5.29289 5.70711 5.29289 5.5C5.29289 5.29289 5.12623 5.12623 4.79289 4.79289L1 1"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="subscribe">
+                    <div class="section-title">
+                        <span class="subtitle">Newsletter</span>
+                        <h2 class="heading">Subscribe To Our Newsletter</h2>
+                    </div>
+                    <div class="subscribe-btn">
+                        <input type="email" placeholder="Email Address" />
+                        <a href="contact-us.html" class="primary-btn">
+                            <span>Sign Up</span>
+                            <span>
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 10L4.79289 6.20711C5.12623 5.87377 5.29289 5.70711 5.29289 5.5C5.29289 5.29289 5.12623 5.12623 4.79289 4.79289L1 1"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="background: url(assets/img/background/footer-bg.png)">
+        <div class="container">
+            <div class="footer-section">
+                <div class="row gy-5 gy-sm-0">
+                    <div class="col-lg-4">
+                        <div class="footer-content-section">
+                            <div class="footer-logo">
+                                <img src="assets/img/logo/footer-logo.png" alt="img" />
+                            </div>
+                            <div class="footer-content">
+                                <p class="footer-detail">
+                                    SEO agencies typically work businesses of <br />
+                                    all sizes across various industries to help <br />
+                                    them achieve their online
+                                </p>
+                            </div>
+                            <div class="social-item">
+                                <a href="https://twitter.com/?lang=en" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.286 1C11.1821 1 9.47661 2.79086 9.47661 5C9.47661 5.33382 9.51555 5.65809 9.58893 5.96808C7.3 5.96808 3.7 5.44444 1 1.88889C1 10.7778 4.6 13.2963 6.4 13.4444C5.05 14.7778 2.9465 15.7647 1 15.9503C1.83744 16.7106 4.46043 16.9669 5.66725 17C11.9081 17 16.9805 11.7471 17.0934 5.22229C18.2903 4.44391 18.8588 2.33377 19 1.88889C18.4169 2.50119 17.2 2.77778 16.2303 2.46181C15.5317 1.56927 14.4721 1 13.286 1Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1" y="1" width="20" height="20" rx="4" stroke="currentColor"
+                                                stroke-width="1.5" />
+                                            <circle cx="17" cy="5" r="1" fill="currentColor" stroke="currentColor"
+                                                stroke-width="1.5" />
+                                            <circle cx="11" cy="11" r="5" stroke="currentColor" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="https://www.snapchat.com/" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21 16C19.8979 16 19.1559 16 18.6353 16.5886C18.0274 17.2761 17.3562 18 16.4384 18H15.6667C15.2339 18 14.8129 18.1404 14.4667 18.4L13.4 19.2C11.9778 20.2667 10.0222 20.2667 8.60001 19.2L7.53333 18.4C7.18714 18.1404 6.76608 18 6.33334 18L5.56154 18C4.64381 18 3.97263 17.2761 3.36467 16.5886C2.84415 16 2.10208 16 1 16L3.39999 14.2C4.40722 13.4446 5 12.259 5 11V10.5L4.49999 10.5C3.67157 10.5 3 9.82843 3 9C3 8.17158 3.67158 7.5 4.50001 7.5H5V7.00001C5 3.6863 7.6863 1 11 1.00001C14.3137 1.00001 17 3.6863 17 7.00001V7.5H17.5C18.3284 7.5 19 8.17158 19 9C19 9.82843 18.3284 10.5 17.5 10.5L17 10.5V11C17 12.259 17.5928 13.4446 18.6 14.2L21 16Z"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="https://www.pinterest.com/" target="_blank" class="icon-box">
+                                    <span class="social-icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5 19.0005C2.57111 17.1761 1 14.2714 1 10.9998C1 5.47691 5.47715 0.999756 11 0.999756C16.5228 0.999756 21 5.47691 21 10.9998C21 16.5226 16.5228 20.9998 11 20.9998C9.9064 20.9998 8.8538 20.8242 7.86884 20.4998L10.5 10.4998"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M9.17253 15.6553C9.73859 15.8776 10.355 15.9998 11 15.9998C13.7614 15.9998 16 13.7612 16 10.9998C16 8.23833 13.7614 5.99976 11 5.99976C8.23858 5.99976 6 8.23833 6 10.9998C6 11.9105 6.24349 12.7643 6.66891 13.4998"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="footer-link-section">
+                            <div class="row gy-5">
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="footer-link">
+                                        <h3 class="title">Services</h3>
+                                        <ul class="section-list">
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text"> GYM and Spa </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Pick Up & Drop</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Restaurant</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Swimming Pool</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Parking Space</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="footer-link">
+                                        <h3 class="title">Popular links</h3>
+                                        <ul class="section-list">
+                                            <li>
+                                                <a href="contact-us.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Help & Support</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="terms-condition.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Trust & Safety</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">FAQ's</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Feature Hotels</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="property-details.html" class="list-item">
+                                                    <span>
+                                                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.5625 0.414062C0.679688 0.296875 0.84375 0.296875 0.960938 0.414062L5.88281 5.3125C5.97656 5.42969 5.97656 5.59375 5.88281 5.71094L0.960938 10.6094C0.84375 10.7266 0.679688 10.7266 0.5625 10.6094L0.09375 10.1641C0 10.0469 0 9.85938 0.09375 9.76562L4.33594 5.5L0.09375 1.25781C0 1.16406 0 0.976562 0.09375 0.859375L0.5625 0.414062Z"
+                                                                fill="currentColor"></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="list-text">Hotel Booking</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="footer-link contact-link">
+                                        <h3 class="title">Contact Us</h3>
+                                        <div class="section-list">
+                                            <div class="contact-box">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.6667 12.5557L11.5196 13.2911C11.8512 13.3574 12.1862 13.1936 12.3375 12.8911L11.6667 12.5557ZM5.44444 6.33346L5.10903 5.66263C4.80653 5.81389 4.64268 6.1489 4.70901 6.48054L5.44444 6.33346ZM5.75913 6.17612L6.09454 6.84694H6.09454L5.75913 6.17612ZM6.6147 3.92577L7.31106 3.64723L6.6147 3.92577ZM5.89146 2.11765L5.1951 2.39619V2.39619L5.89146 2.11765ZM15.8825 12.1087L15.6039 12.805L15.8825 12.1087ZM14.0744 11.3854L14.3529 10.6891L14.0744 11.3854ZM11.824 12.241L12.4948 12.5764V12.5764L11.824 12.241ZM12.6944 8.11123C12.6944 8.52545 13.0302 8.86123 13.4444 8.86123C13.8587 8.86123 14.1944 8.52545 14.1944 8.11123H12.6944ZM13.1738 6.75058L13.8667 6.46357L13.1738 6.75058ZM11.2495 4.82633L11.5366 4.13342L11.2495 4.82633ZM9.88889 3.80568C9.47468 3.80568 9.13889 4.14146 9.13889 4.55568C9.13889 4.96989 9.47468 5.30568 9.88889 5.30568V3.80568ZM16.25 8.11123C16.25 8.52545 16.5858 8.86123 17 8.86123C17.4142 8.86123 17.75 8.52545 17.75 8.11123H16.25ZM16.4587 5.38993L17.1516 5.10292L16.4587 5.38993ZM12.6102 1.54142L12.8972 0.848513V0.848513L12.6102 1.54142ZM9.88889 0.250122C9.47468 0.250122 9.13889 0.585909 9.13889 1.00012C9.13889 1.41434 9.47468 1.75012 9.88889 1.75012V0.250122ZM16.25 13.7593V15.2223H17.75V13.7593H16.25ZM2.77778 1.75012H4.24083V0.250122H2.77778V1.75012ZM11.6667 12.5557C11.8138 11.8202 11.814 11.8203 11.8142 11.8203C11.8142 11.8203 11.8144 11.8204 11.8145 11.8204C11.8148 11.8204 11.815 11.8205 11.8151 11.8205C11.8154 11.8206 11.8156 11.8206 11.8157 11.8206C11.8158 11.8207 11.8154 11.8206 11.8145 11.8204C11.8127 11.82 11.8088 11.8192 11.803 11.8179C11.7913 11.8153 11.7717 11.8109 11.745 11.8044C11.6914 11.7913 11.6092 11.7701 11.5033 11.7389C11.2912 11.6766 10.9864 11.5751 10.6288 11.4219C9.91014 11.1139 8.99947 10.6056 8.197 9.80313L7.13634 10.8638C8.11164 11.8391 9.20097 12.4419 10.0379 12.8006C10.4581 12.9807 10.8199 13.1015 11.08 13.178C11.2103 13.2163 11.3155 13.2436 11.3904 13.2619C11.4279 13.271 11.4579 13.2778 11.4796 13.2826C11.4905 13.285 11.4993 13.2869 11.506 13.2883C11.5093 13.289 11.5121 13.2896 11.5144 13.2901C11.5155 13.2903 11.5165 13.2905 11.5174 13.2907C11.5178 13.2908 11.5182 13.2908 11.5186 13.2909C11.5188 13.291 11.519 13.291 11.5191 13.291C11.5194 13.2911 11.5196 13.2911 11.6667 12.5557ZM8.197 9.80313C7.39453 9.00066 6.88623 8.08998 6.57825 7.37135C6.42499 7.01376 6.32357 6.70891 6.26119 6.49683C6.23005 6.39096 6.20879 6.3087 6.19576 6.25515C6.18926 6.22839 6.18481 6.20884 6.18223 6.19716C6.18094 6.19131 6.18012 6.18744 6.17974 6.18561C6.17954 6.1847 6.17946 6.1843 6.17949 6.18442C6.1795 6.18448 6.17954 6.18468 6.1796 6.185C6.17964 6.18516 6.17968 6.18536 6.17972 6.18558C6.17975 6.1857 6.17979 6.18589 6.1798 6.18595C6.17984 6.18616 6.17988 6.18637 5.44444 6.33346C4.70901 6.48054 4.70905 6.48077 4.7091 6.48101C4.70912 6.4811 4.70917 6.48135 4.70921 6.48153C4.70928 6.48189 4.70936 6.48229 4.70945 6.48272C4.70962 6.48359 4.70983 6.48459 4.71006 6.48572C4.71053 6.488 4.71111 6.49081 4.71181 6.49416C4.71322 6.50085 4.71511 6.50967 4.71751 6.52054C4.7223 6.54227 4.72915 6.5722 4.73826 6.60968C4.75649 6.6846 4.78384 6.78984 4.82214 6.92008C4.89865 7.18022 5.01945 7.54204 5.19953 7.96223C5.55821 8.79915 6.16103 9.88848 7.13634 10.8638L8.197 9.80313ZM5.77985 7.00428L6.09454 6.84694L5.42372 5.50529L5.10903 5.66263L5.77985 7.00428ZM7.31106 3.64723L6.58781 1.83911L5.1951 2.39619L5.91835 4.20432L7.31106 3.64723ZM16.161 11.4123L14.3529 10.6891L13.7958 12.0818L15.6039 12.805L16.161 11.4123ZM11.1532 11.9056L10.9958 12.2203L12.3375 12.8911L12.4948 12.5764L11.1532 11.9056ZM14.3529 10.6891C13.1323 10.2008 11.7411 10.7297 11.1532 11.9056L12.4948 12.5764C12.7339 12.0983 13.2995 11.8833 13.7958 12.0818L14.3529 10.6891ZM6.09454 6.84694C7.27041 6.259 7.79932 4.86787 7.31106 3.64723L5.91835 4.20432C6.11687 4.70062 5.90182 5.26624 5.42372 5.50529L6.09454 6.84694ZM4.24083 1.75012C4.66109 1.75012 5.03902 2.00599 5.1951 2.39619L6.58781 1.83911C6.20394 0.879416 5.27445 0.250122 4.24083 0.250122V1.75012ZM17.75 13.7593C17.75 12.7257 17.1207 11.7962 16.161 11.4123L15.6039 12.805C15.9941 12.9611 16.25 13.339 16.25 13.7593H17.75ZM15.2222 16.2501C7.78172 16.2501 1.75 10.2184 1.75 2.7779H0.25C0.25 11.0468 6.95329 17.7501 15.2222 17.7501V16.2501ZM15.2222 17.7501C16.6183 17.7501 17.75 16.6184 17.75 15.2223H16.25C16.25 15.79 15.7898 16.2501 15.2222 16.2501V17.7501ZM1.75 2.7779C1.75 2.21027 2.21015 1.75012 2.77778 1.75012V0.250122C1.38172 0.250122 0.25 1.38185 0.25 2.7779H1.75ZM14.1944 8.11123C14.1944 7.54582 14.0831 6.98594 13.8667 6.46357L12.4809 7.03759C12.6219 7.37798 12.6944 7.7428 12.6944 8.11123H14.1944ZM13.8667 6.46357C13.6503 5.94119 13.3332 5.46655 12.9334 5.06675L11.8727 6.12741C12.1332 6.38793 12.3399 6.69721 12.4809 7.03759L13.8667 6.46357ZM12.9334 5.06675C12.5336 4.66694 12.0589 4.34979 11.5366 4.13342L10.9625 5.51924C11.3029 5.66023 11.6122 5.86689 11.8727 6.12741L12.9334 5.06675ZM11.5366 4.13342C11.0142 3.91704 10.4543 3.80568 9.88889 3.80568V5.30568C10.2573 5.30568 10.6221 5.37825 10.9625 5.51924L11.5366 4.13342ZM17.75 8.11123C17.75 7.0789 17.5467 6.05667 17.1516 5.10292L15.7658 5.67694C16.0855 6.44871 16.25 7.27588 16.25 8.11123H17.75ZM17.1516 5.10292C16.7566 4.14916 16.1775 3.28256 15.4475 2.55259L14.3869 3.61325C14.9776 4.20393 15.4461 4.90518 15.7658 5.67694L17.1516 5.10292ZM15.4475 2.55259C14.7176 1.82262 13.851 1.24357 12.8972 0.848513L12.3232 2.23433C13.0949 2.55401 13.7962 3.02256 14.3869 3.61325L15.4475 2.55259ZM12.8972 0.848513C11.9435 0.453456 10.9212 0.250122 9.88889 0.250122V1.75012C10.7242 1.75012 11.5514 1.91466 12.3232 2.23433L12.8972 0.848513Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="list-item">+(323) 750-1234</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-box">
+                                                <div class="icon">
+                                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1 8.00012V4.11123C1 2.39301 2.43269 1.00012 4.2 1.00012H13.8C15.5673 1.00012 17 2.39301 17 4.11123V11.889C17 13.6072 15.5673 15.0001 13.8 15.0001H5.8M4.2 4.88901L7.22496 6.84963C8.29984 7.54631 9.70016 7.54631 10.775 6.84963L13.8 4.88901M1 10.3335H5.8M1 12.6668H5.8"
+                                                            stroke="currentColor" stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="list-item">
+                                                        <a href="https://quomodothemes.website/cdn-cgi/l/email-protection"
+                                                            class="__cf_email__"
+                                                            data-cfemail="4d24232b223422383f223f3928232e28340d2a202c2421632e2220">[email&#160;protected]</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-box">
+                                                <div class="icon">
+                                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3 20.2501C2.58579 20.2501 2.25 20.5859 2.25 21.0001C2.25 21.4143 2.58579 21.7501 3 21.7501V20.2501ZM15 21.7501C15.4142 21.7501 15.75 21.4143 15.75 21.0001C15.75 20.5859 15.4142 20.2501 15 20.2501V21.7501ZM15.75 8.50012C15.75 10.2066 14.6599 12.4137 13.1547 14.247C12.4148 15.1482 11.6072 15.918 10.8465 16.4555C10.0624 17.0096 9.42269 17.2501 9 17.2501V18.7501C9.88982 18.7501 10.8438 18.2941 11.7121 17.6805C12.6038 17.0505 13.5071 16.1816 14.314 15.1988C15.9026 13.2639 17.25 10.721 17.25 8.50012H15.75ZM9 17.2501C8.59247 17.2501 7.95947 16.9994 7.171 16.4075C6.409 15.8354 5.59932 15.018 4.85679 14.0669C3.34675 12.1328 2.25 9.8251 2.25 8.11123H0.75C0.75 10.3247 2.09075 12.9615 3.67446 14.99C4.4788 16.0202 5.38006 16.9386 6.27041 17.607C7.13428 18.2556 8.09503 18.7501 9 18.7501V17.2501ZM2.25 8.11123C2.25 4.48071 5.47857 1.75012 9 1.75012V0.250122C4.78944 0.250122 0.75 3.51953 0.75 8.11123H2.25ZM9 1.75012C12.4938 1.75012 15.75 4.45516 15.75 8.50012H17.25C17.25 3.54509 13.2382 0.250122 9 0.250122V1.75012ZM11.25 8.00012C11.25 9.24276 10.2426 10.2501 9 10.2501V11.7501C11.0711 11.7501 12.75 10.0712 12.75 8.00012H11.25ZM9 10.2501C7.75736 10.2501 6.75 9.24276 6.75 8.00012H5.25C5.25 10.0712 6.92893 11.7501 9 11.7501V10.2501ZM6.75 8.00012C6.75 6.75748 7.75736 5.75012 9 5.75012V4.25012C6.92893 4.25012 5.25 5.92905 5.25 8.00012H6.75ZM9 5.75012C10.2426 5.75012 11.25 6.75748 11.25 8.00012H12.75C12.75 5.92905 11.0711 4.25012 9 4.25012V5.75012ZM3 21.7501H15V20.2501H3V21.7501Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                                <div class="content">
+                                                    <p class="list-item">
+                                                        374 A Tower, megas William Road Blvd, Melbourne
+                                                        2721, IL, USA
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-counter">
+                                            <div class="counter-wrapper">
+                                                <h3 class="wrapper-title">47,49,248</h3>
+                                                <p class="list-item">Total Booking</p>
+                                            </div>
+                                            <div class="counter-wrapper">
+                                                <h3 class="wrapper-title">99,472,554</h3>
+                                                <p class="list-item">Active Users</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-section">
+                    <div class="row gy-3 gy-sm-0">
+                        <div class="col-md-6">
+                            <p class="list-item">
+                                2024 © All rights reserved by
+                                <span class="inner-text"> Quomodotheme</span>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="copyright-item">
+                                <a href="privacy-policy.html" class="list-item">Privacy Policy
+                                </a>
+                                <div class="devider"></div>
+                                <a href="terms-condition.html" class="list-item">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backto-top">
+        <span>
+            <svg width="39" height="75" viewBox="0 0 39 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.235 75.0033L18.3095 74.9033C18.3095 74.8866 18.3144 74.87 18.3168 74.8533C18.0878 74.8295 17.8612 74.7866 17.6322 74.7842C15.744 74.7771 13.9751 74.246 12.2526 73.5553C8.50789 72.0526 5.51357 69.6305 3.26965 66.3344C1.58854 63.8623 0.51897 61.145 0.192494 58.1918C0.0268193 56.6914 0.0195101 55.172 0.0146374 53.6597C-0.00485375 47.2818 0.0073282 40.904 1.90292e-05 34.5261C-0.00485375 30.6394 0.925847 27.0099 3.08205 23.7233C5.88146 19.4579 9.78943 16.6548 14.7986 15.3687C16.9281 14.8234 19.0989 14.6257 21.3014 14.8638C27.6384 15.5497 32.5185 18.5529 36.0001 23.7566C37.4546 25.931 38.3902 28.3245 38.7678 30.899C38.9311 32.0183 38.9847 33.1615 38.9896 34.2951C39.0066 41.1397 38.9993 47.982 38.992 54.8267C38.992 55.8531 39.0066 56.8867 38.9092 57.906C38.7021 60.0685 38.0735 62.1238 37.0965 64.0743C35.2741 67.711 32.5843 70.5569 28.9809 72.5384C26.793 73.7435 24.4443 74.5247 21.9348 74.789C21.4987 74.8343 21.0553 74.8319 20.6119 74.8914C20.7386 74.9271 20.8653 74.9652 20.9919 75.001H17.2399L17.235 75.0033ZM3.08449 44.8407H3.08692C3.08692 48.3321 3.06743 51.8235 3.09911 55.3149C3.10885 56.3985 3.18925 57.4893 3.3598 58.5586C3.7618 61.114 4.80458 63.4313 6.40772 65.4747C9.05851 68.8565 12.5133 70.988 16.8355 71.7001C18.8869 72.0383 20.9432 72.024 22.9654 71.5786C26.8271 70.726 30.0236 68.7898 32.4649 65.7152C34.8891 62.662 36.0001 59.1897 35.9831 55.322C35.9489 48.2225 35.9684 41.1207 35.9757 34.0188C35.9757 32.7566 35.8344 31.511 35.5372 30.2893C34.7015 26.8598 32.94 23.9686 30.1698 21.699C26.1522 18.4052 21.5401 17.1835 16.3994 18.1242C12.8374 18.7768 9.82841 20.4748 7.38959 23.1327C4.53901 26.2382 3.12103 29.8797 3.09423 34.0403C3.07231 37.6412 3.08936 41.2398 3.08936 44.8407H3.08449Z"
+                    fill="#2B74FE" />
+                <path
+                    d="M38.9361 56.4858C38.9216 56.381 38.8901 56.2762 38.8901 56.1738C38.8877 48.8671 38.8853 41.5605 38.8877 34.2538C38.8877 34.049 38.9192 33.8442 38.9361 33.6394V56.4882V56.4858Z"
+                    fill="#2B74FE" />
+                <path
+                    d="M11.0364 8.95544C10.9997 8.54635 11.2855 8.24579 11.5541 7.9421C13.5504 5.68165 15.5488 3.42432 17.5473 1.16595C17.7576 0.92801 17.9582 0.681719 18.1815 0.456299C18.7973 -0.166735 19.5609 -0.150037 20.1411 0.504305C22.4113 3.06323 24.6773 5.62529 26.941 8.19048C27.4328 8.74777 27.4005 9.48664 26.8839 9.91556C26.3349 10.3706 25.6479 10.3142 25.1238 9.72667C23.2677 7.6478 21.4234 5.55954 19.577 3.47337C19.1327 2.97139 19.1402 2.97244 18.6765 3.49842C16.8808 5.53345 15.0808 7.5664 13.2829 9.60144C12.9896 9.9333 12.6563 10.1702 12.1764 10.1462C11.5196 10.1149 11.0364 9.63066 11.0364 8.95544Z"
+                    fill="#2B74FE" />
+                <path
+                    d="M16.0442 34.875C16.0442 34.0653 16.0004 33.2508 16.054 32.4434C16.1612 30.8002 17.5231 29.4831 19.2042 29.445C20.9609 29.4046 22.2668 30.6144 22.5275 32.0791C22.6079 32.5339 22.6395 33.0031 22.6395 33.4651C22.6395 34.7393 22.6517 36.0158 22.5908 37.2899C22.508 38.9856 21.0242 40.3217 19.3187 40.3098C17.5694 40.2979 16.1417 38.9737 16.0589 37.2471C16.0223 36.4588 16.0515 35.6657 16.0515 34.875C16.0515 34.875 16.0491 34.875 16.0467 34.875H16.0442Z"
+                    fill="#2B74FE" />
+            </svg>
+        </span>
+    </div>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery_3.7.1.min.js"></script>
+
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <script src="assets/js/bootstrap_5.3.2.bundle.min.js"></script>
+
+    <script src="assets/js/nouislider.min.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/lity.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
